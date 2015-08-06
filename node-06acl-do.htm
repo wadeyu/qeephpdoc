@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QeePHP/FleaPHP 开源开发框架 - 起源科技开源社区|中国领先的 PHP 开源解决方案提供商</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="base.css" tppabs="http://qeephp.com/qeephp/base.css" />
+<link rel="stylesheet" type="text/css" href="jquery-ui-081120.css" tppabs="http://qeephp.com/qeephp/jquery-ui-081120.css" />
+<script type="text/javascript" src="jquery-1.2.6.min.js" tppabs="http://qeephp.com/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.5.3-081202.min.js" tppabs="http://qeephp.com/qeephp/jquery-ui-1.5.3-081202.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+});
+</script>
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<!-- header -->
+<div id="header">
+  <div class="container clearfix">
+    <div id="header_nav">
+      <ul id="navigation">
+        <li class="first"><a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a></li>
+        <li><a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a></li>
+        <li><a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a></li>
+        <li><a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<!-- /header -->
+
+
+<!-- core -->
+<div id="core" class="clearfix">
+  <div class="container clearfix">
+
+    
+
+    <!-- 整页 -->
+
+    <div id="fullpage" class="contents">
+
+      
+<div class="guide-section">
+
+  <div class="guide-header">
+    <span class="nav">
+      <a href="index-4.htm" tppabs="http://qeephp.com/docs/">文档索引</a>
+      &raquo;
+      <a href="index-5.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/">QeePHP 快速入门</a>
+      &raquo;
+      <a href="node-06acl.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl">访问控制</a>
+      &raquo;
+      实现访问控制    </span>
+  </div>
+
+  <div class="guide-section">
+    <div class="guide-sidebar">
+      
+<h2>目录</h2>
+
+
+<h3><a href="node-01start.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start">起步</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-01start-environment.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-environment" subject="准备开发环境">准备开发环境</a>
+  </li>
+    <li>
+    <a href="node-01start-creating-app.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-creating-app" subject="创建应用程序">创建应用程序</a>
+  </li>
+    <li>
+    <a href="node-01start-dirstructure.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-dirstructure" subject="目录结构">目录结构</a>
+  </li>
+    <li>
+    <a href="node-01start-mvc.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-mvc" subject="MVC 模式">MVC 模式</a>
+  </li>
+    <li>
+    <a href="node-01start-mvc-startup.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-mvc-startup" subject="MVC 模式的启动">MVC 模式的启动</a>
+  </li>
+    <li>
+    <a href="node-01start-mvc-controller.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-mvc-controller" subject="控制器">控制器</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-02development.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development">开始开发</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-02development-database.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development-database" subject="创建数据库">创建数据库</a>
+  </li>
+    <li>
+    <a href="node-02development-yaml.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development-yaml" subject="YAML 入门">YAML 入门</a>
+  </li>
+    <li>
+    <a href="node-02development-configs.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development-configs" subject="修改配置文件">修改配置文件</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-03automation.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-03automation">使用自动化工具</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-03automation-controller.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-03automation-controller" subject="创建控制器">创建控制器</a>
+  </li>
+    <li>
+    <a href="node-03automation-model.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-03automation-model" subject="创建模型">创建模型</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-04thinking.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking">编写代码之前的思考</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-04thinking-oo.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking-oo" subject="用对象来思考">用对象来思考</a>
+  </li>
+    <li>
+    <a href="node-04thinking-analysis.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking-analysis" subject="需求分析">需求分析</a>
+  </li>
+    <li>
+    <a href="node-04thinking-creating-models.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking-creating-models" subject="创建需要的模型">创建需要的模型</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-05users.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users">实现用户功能</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-05users-register-ui.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-ui" subject="用户注册（用户界面）">用户注册（用户界面）</a>
+  </li>
+    <li>
+    <a href="node-05users-register-model.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-model" subject="用户注册（完善模型）">用户注册（完善模型）</a>
+  </li>
+    <li>
+    <a href="node-05users-register-code.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-code" subject="用户注册（功能实现）">用户注册（功能实现）</a>
+  </li>
+    <li>
+    <a href="node-05users-login.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-login" subject="用户登录和注销">用户登录和注销</a>
+  </li>
+    <li>
+    <a href="node-05users-change-passwd.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-change-passwd" subject="修改密码">修改密码</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-06acl.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl">访问控制</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-06acl-why.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl-why" subject="为什么要使用访问控制">为什么要使用访问控制</a>
+  </li>
+    <li>
+    <a href="node-06acl-do.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl-do" subject="实现访问控制">实现访问控制</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-07tasks.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks">实现任务管理</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-07tasks-add.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks-add" subject="添加任务">添加任务</a>
+  </li>
+    <li>
+    <a href="node-07tasks-edit.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks-edit" subject="修改和删除任务">修改和删除任务</a>
+  </li>
+    <li>
+    <a href="node-07tasks-pagination.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks-pagination" subject="分页与最后的完善">分页与最后的完善</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-08routes.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes">美化 URL</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-08routes-router.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes-router" subject="URL 路由是什么">URL 路由是什么</a>
+  </li>
+    <li>
+    <a href="node-08routes-configs.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes-configs" subject="启用 URL 路由">启用 URL 路由</a>
+  </li>
+    <li>
+    <a href="node-08routes-rules.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes-rules" subject="添加路由规则">添加路由规则</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-09review.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-09review">回顾</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-09review-readmore.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-09review-readmore" subject="教程没有涉及的内容">教程没有涉及的内容</a>
+  </li>
+    <li>
+    <a href="node-09review-improve.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-09review-improve" subject="进一步的改进">进一步的改进</a>
+  </li>
+  
+</ul>
+
+
+
+    </div>
+
+    <div class="guide-contents formatted">
+      
+<h1>实现访问控制</h1>
+
+<p>在了解 ACL 的原理和机制后，我们现在来为 todo
+应用加上访问控制功能。</p>
+
+<h2>为控制器指定访问规则</h2>
+
+<p>默认情况下，所有的访问控制规则都书写在 acl.yaml
+中，该文件的结构如下：</p>
+
+<pre class="python
+code">控制器名称:
+  allow: 允许使用该控制器的角色</pre>
+
+<p>例如：</p>
+
+<pre class="python code">tasks:
+  allow: <span class="st0">'MEMBER'</span></pre>
+
+<p>表示只有具有 MEMBER 角色的用户才可以使用 tasks
+控制器。依次类推，我们可以给每个要限制访问的控制器都指定规则。</p>
+
+<pre class="python code">posts:
+  <span
+class="co1"># 多个角色用逗号分割就可以了</span>
+  allow: <span
+class="st0">'MEMBER, ADMIN'</span>
+&nbsp;
+tasks:
+  allow: <span
+class="st0">'MEMBER'</span>
+&nbsp;
+comments:
+  allow: <span
+class="st0">'MEMBER'</span></pre>
+
+<p>但有时候系统中存在较多的角色，此时我们只希望禁止特定角色的用户，可以使用
+deny 来指定禁止访问的角色：</p>
+
+<pre class="python code">users:
+  deny: <span class="st0">'ADMIN'</span></pre>
+
+<p>表示具有 ADMIN 角色的用户不能够使用 users 控制器。</p>
+
+<h2>为动作指定访问规则</h2>
+
+<p>实际开发中，经常都会出现某个控制器的多个动作，有些允许这部分角色访问，某些又允许其他角色访问。例如
+users 控制器的 changePasswd、logout
+动作就只有登录后的用户访问，而 register 和 login
+只有未登录的用户才可以访问。</p>
+
+<p>我们可以这样指定 ACL：</p>
+
+<pre class="python code">users:
+  actions:
+    changePasswd:
+      allow: <span
+class="st0">'MEMBER'</span>
+    logout:
+      allow: <span
+class="st0">'MEMBER'</span>
+    register:
+      allow: ACL_NO_ROLE
+    login:
+      allow: ACL_NO_ROLE</pre>
+
+<p>ACL_NO_ROLE 是一个 QeePHP
+预定义的值，表示不具备任何角色的用户。而未登录的用户是肯定没有角色的，因此就实现了只有未登录用户才可以使用
+register 和 login 动作的目的。</p>
+
+<p>但是上面的书写方法在控制器中有很多动作时就显得啰嗦了，我们可以简化为：</p>
+
+<pre class="python
+code">users:
+  allow: ACL_NO_ROLE
+  actions:
+    changePasswd:
+      allow: <span
+class="st0">'MEMBER'</span>
+    logout:
+      allow: <span
+class="st0">'MEMBER'</span></pre>
+
+<p>直接为控制器指定访问规则。该规则也会应用到 users
+的所有动作上。但这个默认规则可以通过单独指定来覆盖，所以在访问
+changePasswd 和 logout 动作时还是以我们指定的为准。</p>
+
+<p>上面的规则也可以写成：</p>
+
+<pre class="python code">users:
+  allow: <span
+class="st0">'MEMBER'</span>
+  actions:
+    register:
+      allow: ACL_NO_ROLE
+    login:
+      allow: ACL_NO_ROLE</pre>
+
+<p>两者的区别在于后者为 users 的所有动作默认指定了必须有
+MEMBER 角色才能访问，而 register 和 login
+两个动作例外。这种写法相对于前一种更安全。因为你在
+users
+控制器中新添加的动作如果是需要授权的，那么可能因为忘了单独指定规则而造成安全漏洞。</p>
+
+<h2>为 todo 应用加上访问规则</h2>
+
+<p>现在为 todo 应用加上访问规则。编辑 configs/acl.yaml：</p>
+
+<pre class="python
+code">users:
+  allow: ACL_HAS_ROLE
+  actions:
+    register:
+      allow: ACL_NO_ROLE
+    login:
+      allow: ACL_NO_ROLE</pre>
+
+<p>这里又出现了一个新的 QeePHP
+预定义值“ACL_HAS_ROLE”，用来表示任何角色。因此上面规则的意思就是只要具有角色的用户都可以访问
+users 控制器的动作。而 register 和 login
+动作只能由没有角色的用户访问。</p>
+
+<p>现在我们来试验一下。在未登录状态下访问 <a
+href="javascript:if(confirm('http://localhost:9000/todo/index.php?controller=users&action=changepasswd  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽�����������·���С�  \n\n����Ҫ�ӷ�������������?'))window.location='http://localhost:9000/todo/index.php?controller=users&action=changepasswd'" tppabs="http://localhost:9000/todo/index.php?controller=users&action=changepasswd">http://localhost/todo/index.php?controller=users&action=changepasswd</a>，可以看到如下画面：</p>
+
+<div class="figure"><img
+src="acl-do-01.png" tppabs="http://qeephp.com/upload/docs/qeephp-quickstart/images/acl-do-01.png" alt="" />
+	<p>拒绝访问的错误信息</p>
+</div>
+
+<p>这说明我们的 ACL 已经起作用了。再访问 <a
+href="javascript:if(confirm('http://localhost:9000/todo/index.php?controller=users&action=register  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽�����������·���С�  \n\n����Ҫ�ӷ�������������?'))window.location='http://localhost:9000/todo/index.php?controller=users&action=register'" tppabs="http://localhost:9000/todo/index.php?controller=users&action=register">http://localhost/todo/index.php?controller=users&action=register</a>
+则可以看到注册页面，说明对 register 和 login
+动作指定的规则成功覆盖了 users 控制器的默认规则。</p>
+
+<h2>改进访问控制的错误处理</h2>
+
+<p>上面的错误提示信息显然不够友好，我们需要定制这些错误信息，以便更好的引导用户正确使用我们的应用程序。</p>
+
+<p>打开 app/myapp.php 文件，找到 _on_access_denied()
+方法，修改内容为：</p>
+
+<pre class="php code">protected <span
+class="kw2">function</span> _on_access_denied<span class="br0">&#40;</span><span
+class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span
+class="re0">$roles</span> <span class="sy0">=</span> <span
+class="re0">$this</span><span class="sy0">-&gt;</span><span
+class="me1">currentUserRoles</span><span class="br0">&#40;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+    <span
+class="kw1">if</span> <span class="br0">&#40;</span><span
+class="kw3">empty</span><span class="br0">&#40;</span><span
+class="re0">$roles</span><span class="br0">&#41;</span><span
+class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span
+class="co1">// 如果当前用户没有角色，则转到登录页面</span>
+        <span
+class="kw1">return</span> <span class="kw2">new</span> QView_Redirect<span
+class="br0">&#40;</span>url<span class="br0">&#40;</span><span
+class="st_h">'users/login'</span><span class="br0">&#41;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+    <span
+class="br0">&#125;</span>
+&nbsp;
+    <span class="sy0">....</span>
+<span
+class="br0">&#125;</span></pre>
+
+<p>这样在未登录用户访问不具备权限的页面时，将自动重定向到登录页面。而已经登录的用户则仍然显示错误信息页面。我们可以进一步修改
+app/view/403.php 来定制更有意义的错误信息显示。</p>
+
+<h2>指定全局默认规则</h2>
+
+<p>随着开发的进行，我们会添加更多的控制器，为了避免因为忘了添加规则导致出现安全漏洞，我们可以将所有控制器的默认规则指定为不允许任何人访问。</p>
+
+<p>在 acl.yaml 中增加：</p>
+
+<pre class="python code">ALL_CONTROLLERS:
+  deny: ACL_EVERYONE</pre>
+
+<p>ALL_CONTROLLERS 表示所有的控制器，而 ACL_EVERYONE
+表示任何人（不管用户有没有角色）。修改以后，当新增了控制器，这个控制器默认是不允许访问，这样可以提醒我们记得为控制器指定必要的访问规则。</p>
+
+<h2>完善 todo 的访问控制规则</h2>
+
+<p>下面我们把 todo 应用的完整访问规则写出来：</p>
+
+<pre class="python
+code">users:
+  allow: ACL_HAS_ROLE
+  actions:
+    register:
+      allow: ACL_NO_ROLE
+    login:
+      allow: ACL_NO_ROLE
+&nbsp;
+tasks:
+  allow: ACL_HAS_ROLE
+&nbsp;
+default:
+  allow: ACL_EVERYONE
+&nbsp;
+ALL_CONTROLLERS:
+  deny: ACL_EVERYONE</pre>
+    </div>
+
+    <div class="nofloat"></div>
+  </div>
+
+  <div class="guide-footer">
+
+    <table border="0" width="100%">
+      <tr>
+        <td align="left" width="200">
+                    &laquo;
+          <a href="node-06acl-why.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl-why">为什么要使用访问控制</a>
+          
+        </td>
+
+        <td align="center">
+          本章：<a href="node-06acl.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl">访问控制</a>
+          <br />
+          <a href="index-5.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/">返回索引页</a>
+        </td>
+
+        <td align="right" width="200">
+                    <a href="node-07tasks.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks">实现任务管理</a>
+          &raquo;
+                  </td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
+
+    </div>
+
+    <!-- 整页 -->
+
+
+
+<div id="google-adsense-block720" style="margin: 10px auto 20px auto; width: 730px; height: 90px;"></div>
+
+
+  </div>
+</div>
+<!-- /core -->
+
+<!-- footer -->
+<div id="footer">
+  <div id="breadcrumbs">
+    <p>
+      <a href="index.htm" tppabs="http://qeephp.com/">返回首页</a>
+      &nbsp;&nbsp;
+      <a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a>
+      &nbsp;&nbsp;
+      <a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a>
+      &nbsp;&nbsp;
+      <a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a>
+      &nbsp;&nbsp;
+      <a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a>
+      &nbsp;&nbsp;
+      <a href="index-1.htm" tppabs="http://qeephp.com/bbs/">论坛</a>
+    </p>
+  </div>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /page-wrapper -->
+
+</body>

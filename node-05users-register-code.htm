@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QeePHP/FleaPHP 开源开发框架 - 起源科技开源社区|中国领先的 PHP 开源解决方案提供商</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="base.css" tppabs="http://qeephp.com/qeephp/base.css" />
+<link rel="stylesheet" type="text/css" href="jquery-ui-081120.css" tppabs="http://qeephp.com/qeephp/jquery-ui-081120.css" />
+<script type="text/javascript" src="jquery-1.2.6.min.js" tppabs="http://qeephp.com/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.5.3-081202.min.js" tppabs="http://qeephp.com/qeephp/jquery-ui-1.5.3-081202.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+});
+</script>
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<!-- header -->
+<div id="header">
+  <div class="container clearfix">
+    <div id="header_nav">
+      <ul id="navigation">
+        <li class="first"><a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a></li>
+        <li><a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a></li>
+        <li><a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a></li>
+        <li><a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<!-- /header -->
+
+
+<!-- core -->
+<div id="core" class="clearfix">
+  <div class="container clearfix">
+
+    
+
+    <!-- 整页 -->
+
+    <div id="fullpage" class="contents">
+
+      
+<div class="guide-section">
+
+  <div class="guide-header">
+    <span class="nav">
+      <a href="index-4.htm" tppabs="http://qeephp.com/docs/">文档索引</a>
+      &raquo;
+      <a href="index-5.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/">QeePHP 快速入门</a>
+      &raquo;
+      <a href="node-05users.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users">实现用户功能</a>
+      &raquo;
+      用户注册（功能实现）    </span>
+  </div>
+
+  <div class="guide-section">
+    <div class="guide-sidebar">
+      
+<h2>目录</h2>
+
+
+<h3><a href="node-01start.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start">起步</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-01start-environment.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-environment" subject="准备开发环境">准备开发环境</a>
+  </li>
+    <li>
+    <a href="node-01start-creating-app.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-creating-app" subject="创建应用程序">创建应用程序</a>
+  </li>
+    <li>
+    <a href="node-01start-dirstructure.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-dirstructure" subject="目录结构">目录结构</a>
+  </li>
+    <li>
+    <a href="node-01start-mvc.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-mvc" subject="MVC 模式">MVC 模式</a>
+  </li>
+    <li>
+    <a href="node-01start-mvc-startup.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-mvc-startup" subject="MVC 模式的启动">MVC 模式的启动</a>
+  </li>
+    <li>
+    <a href="node-01start-mvc-controller.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-01start-mvc-controller" subject="控制器">控制器</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-02development.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development">开始开发</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-02development-database.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development-database" subject="创建数据库">创建数据库</a>
+  </li>
+    <li>
+    <a href="node-02development-yaml.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development-yaml" subject="YAML 入门">YAML 入门</a>
+  </li>
+    <li>
+    <a href="node-02development-configs.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-02development-configs" subject="修改配置文件">修改配置文件</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-03automation.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-03automation">使用自动化工具</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-03automation-controller.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-03automation-controller" subject="创建控制器">创建控制器</a>
+  </li>
+    <li>
+    <a href="node-03automation-model.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-03automation-model" subject="创建模型">创建模型</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-04thinking.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking">编写代码之前的思考</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-04thinking-oo.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking-oo" subject="用对象来思考">用对象来思考</a>
+  </li>
+    <li>
+    <a href="node-04thinking-analysis.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking-analysis" subject="需求分析">需求分析</a>
+  </li>
+    <li>
+    <a href="node-04thinking-creating-models.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-04thinking-creating-models" subject="创建需要的模型">创建需要的模型</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-05users.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users">实现用户功能</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-05users-register-ui.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-ui" subject="用户注册（用户界面）">用户注册（用户界面）</a>
+  </li>
+    <li>
+    <a href="node-05users-register-model.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-model" subject="用户注册（完善模型）">用户注册（完善模型）</a>
+  </li>
+    <li>
+    <a href="node-05users-register-code.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-code" subject="用户注册（功能实现）">用户注册（功能实现）</a>
+  </li>
+    <li>
+    <a href="node-05users-login.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-login" subject="用户登录和注销">用户登录和注销</a>
+  </li>
+    <li>
+    <a href="node-05users-change-passwd.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-change-passwd" subject="修改密码">修改密码</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-06acl.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl">访问控制</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-06acl-why.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl-why" subject="为什么要使用访问控制">为什么要使用访问控制</a>
+  </li>
+    <li>
+    <a href="node-06acl-do.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-06acl-do" subject="实现访问控制">实现访问控制</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-07tasks.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks">实现任务管理</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-07tasks-add.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks-add" subject="添加任务">添加任务</a>
+  </li>
+    <li>
+    <a href="node-07tasks-edit.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks-edit" subject="修改和删除任务">修改和删除任务</a>
+  </li>
+    <li>
+    <a href="node-07tasks-pagination.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-07tasks-pagination" subject="分页与最后的完善">分页与最后的完善</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-08routes.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes">美化 URL</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-08routes-router.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes-router" subject="URL 路由是什么">URL 路由是什么</a>
+  </li>
+    <li>
+    <a href="node-08routes-configs.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes-configs" subject="启用 URL 路由">启用 URL 路由</a>
+  </li>
+    <li>
+    <a href="node-08routes-rules.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-08routes-rules" subject="添加路由规则">添加路由规则</a>
+  </li>
+  
+</ul>
+
+
+
+<h3><a href="node-09review.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-09review">回顾</a></h3>
+
+
+<ul>
+    <li>
+    <a href="node-09review-readmore.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-09review-readmore" subject="教程没有涉及的内容">教程没有涉及的内容</a>
+  </li>
+    <li>
+    <a href="node-09review-improve.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-09review-improve" subject="进一步的改进">进一步的改进</a>
+  </li>
+  
+</ul>
+
+
+
+    </div>
+
+    <div class="guide-contents formatted">
+      
+<h1>实现用户注册（功能实现）</h1>
+
+<p>在准备好模型后，我们现在来处理表单的提交。</p>
+
+<p>QeePHP
+为表单提供了全面支持，并且允许开发者将表单和模型结合起来使用。这样一来，表单数据的过滤、验证，以及错误处理都可以自动完成，不需要开发者手工编码实现。关于如何使用表单，有专门的章节详细阐述。这里我们只简单的展示一下使用
+QeePHP 表单模型带来的优势。</p>
+
+<h2>实现用户注册表单</h2>
+
+<p>在 Web 应用中，表单需要完成下面的主要任务：</p>
+
+<ul>
+	<li>容纳从客户端提交的数据</li>
+
+	<li>对客户端提交的数据进行过滤</li>
+
+	<li>对客户端提交的数据进行验证</li>
+
+	<li>导出过滤和验证后的数据</li>
+
+	<li>构造出在浏览器中需要的 HTML 代码</li>
+</ul>
+
+<p>为了提供更好的灵活性，并且简化表单的使用，QeePHP
+将上述几项任务分为多个不同的部分：</p>
+
+<ul>
+	<li>QForm 负责构造表单元素容器</li>
+
+	<li>表单元素负责容纳数据，并数据进行过滤和验证</li>
+
+	<li>通过 QeePHP 的用户界面控件构造表单 HTML 代码</li>
+</ul>
+
+<p>在 QeePHP 应用中使用表单，典型的过程如下：</p>
+
+<ol>
+	<li>创建表单，定义表单需要容纳的数据，以及过滤和验证规则</li>
+
+	<li>在控制器动作中构造表单对象，并导入数据进行过滤和验证</li>
+
+	<li>在视图中构造表单的 HTML
+	代码，或者通过视图片段构造表单 HTML 代码</li>
+</ol>
+
+<p>搞清楚了基本概念，我们就来一步步实现用户注册表单。</p>
+
+<h4>创建表单对象</h4>
+
+<p>新建文件 app/form/userlogin.php，内容如下：</p>
+
+<pre class="php code"><span class="kw2">class</span> Form_UserLogin <span
+class="kw2">extends</span> QForm
+<span class="br0">&#123;</span>
+    <span
+class="kw2">function</span> __construct<span class="br0">&#40;</span><span
+class="re0">$action</span><span class="br0">&#41;</span>
+    <span
+class="br0">&#123;</span>
+        <span
+class="co1">// 调用父类的构造函数</span>
+        parent<span
+class="sy0">::</span>__construct<span class="br0">&#40;</span><span
+class="st_h">'form_userlogin'</span><span class="sy0">,</span> <span
+class="re0">$action</span><span class="br0">&#41;</span><span
+class="sy0">;</span>
+&nbsp;
+        <span
+class="co1">// 从配置文件载入表单</span>
+        <span
+class="re0">$filename</span> <span class="sy0">=</span> <span
+class="kw3">dirname</span><span class="br0">&#40;</span><span
+class="kw2">__FILE__</span><span class="br0">&#41;</span> <span
+class="sy0">.</span> <span class="st_h">'/userlogin_form.yaml'</span><span
+class="sy0">;</span>
+        <span class="re0">$this</span><span
+class="sy0">-&gt;</span><span class="me1">loadFromConfig</span><span
+class="br0">&#40;</span>Helper_YAML<span class="sy0">::</span><span
+class="me2">loadCached</span><span class="br0">&#40;</span><span
+class="re0">$filename</span><span class="br0">&#41;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+        <span
+class="re0">$this</span><span class="sy0">-&gt;</span><span
+class="me1">addValidations</span><span class="br0">&#40;</span>User<span
+class="sy0">::</span><span class="me2">meta</span><span
+class="br0">&#40;</span><span class="br0">&#41;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+    <span
+class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>再新建文件 app/form/userlogin_form.yaml：</p>
+
+<pre class="python code"><span
+class="co1"># ~form 开头的内容用于指定表单属性</span>
+~form:
+  _subject: <span
+class="st0">&quot;注册新用户&quot;</span>
+&nbsp;
+<span
+class="co1"># 指定字段及过滤器等信息</span>
+&nbsp;
+username:
+  _ui: textbox
+  _filters: <span
+class="br0">&#91;</span><span class="st0">'trim'</span>, <span
+class="st0">'strtolower'</span><span class="br0">&#93;</span>
+  _label: <span
+class="st0">&quot;用户名&quot;</span>
+&nbsp;
+password:
+  _ui: password
+  _label: <span
+class="st0">&quot;密码&quot;</span></pre>
+
+<p>虽然为了演示表单的时候，对于用户登录这种表单我们也用了两个分离的文件。但对于一些复杂表单，分离为两个文件后，可以分别修改表单的行为（表单对象文件）和定义（配置文件），更好的实现职责分离的目标。</p>
+
+<h4>准备表单视图</h4>
+
+<p>表单对象要转换成 HTML
+代码，还要借助表单视图。幸运的是表单视图是一个完全独立的部分，我们可以从
+QeePHP
+社区上下载一些现成的表单视图来使用，或者以其为基础修改。这样大大的减少了工作量。</p>
+
+<p>这里使用的是 <a
+href="formview_simple-1.htm" tppabs="http://qeephp.com/projects/show/name/formview_simple">http://qeephp.com/projects/show/name/formview_simple</a>
+这个表单视图。</p>
+
+<blockquote>
+	<p>记得修改 app/view/_layouts/default_layout.php，加入：</p>
+
+	<p>或者将表单视图的样式表合并到 public/css/style.css
+	文件中。</p>
+</blockquote>
+
+<p>按照说明准备好文件后，修改 app/view/users/register.php
+文件的内容为：</p>
+
+<pre class="php code"><span class="kw2">&lt;?php</span> <span
+class="re0">$this</span><span class="sy0">-&gt;</span>_extends<span
+class="br0">&#40;</span><span class="st_h">'_layouts/default_layout'</span><span
+class="br0">&#41;</span><span class="sy0">;</span> <span
+class="kw2">?&gt;</span>
+&nbsp;
+<span class="kw2">&lt;?php</span> <span
+class="re0">$this</span><span class="sy0">-&gt;</span>_block<span
+class="br0">&#40;</span><span class="st_h">'contents'</span><span
+class="br0">&#41;</span><span class="sy0">;</span> <span
+class="kw2">?&gt;</span>
+&nbsp;
+<span class="kw2">&lt;?php</span> <span
+class="re0">$this</span><span class="sy0">-&gt;</span>_element<span
+class="br0">&#40;</span><span class="st_h">'formview_simple'</span><span
+class="sy0">,</span> <span class="kw3">array</span><span
+class="br0">&#40;</span><span class="st_h">'form'</span> <span
+class="sy0">=&gt;</span> <span class="re0">$form</span><span
+class="br0">&#41;</span><span class="br0">&#41;</span><span
+class="sy0">;</span> <span class="kw2">?&gt;</span>
+&nbsp;
+<span
+class="kw2">&lt;?php</span> <span class="re0">$this</span><span
+class="sy0">-&gt;</span>_endblock<span class="br0">&#40;</span><span
+class="br0">&#41;</span><span class="sy0">;</span> <span
+class="kw2">?&gt;</span></pre>
+
+<p>相比以前手工编写的表单，代码量大大减少，而且还具有更多的功能。</p>
+
+<h4>实现用户登录</h4>
+
+<p>修改 users 控制器的 actionRegister() 方法为：</p>
+
+<pre class="php code"><span class="kw2">function</span> actionRegister<span
+class="br0">&#40;</span><span class="br0">&#41;</span>
+<span
+class="br0">&#123;</span>
+    <span
+class="co1">// 构造表单对象</span>
+    <span
+class="re0">$form</span> <span class="sy0">=</span> <span
+class="kw2">new</span> Form_UserLogin<span class="br0">&#40;</span>url<span
+class="br0">&#40;</span><span class="st_h">'users/register'</span><span
+class="br0">&#41;</span><span class="br0">&#41;</span><span
+class="sy0">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span
+class="br0">&#40;</span><span class="re0">$this</span><span
+class="sy0">-&gt;</span>_context<span class="sy0">-&gt;</span><span
+class="me1">isPOST</span><span class="br0">&#40;</span><span
+class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <span
+class="re0">$form</span><span class="sy0">-&gt;</span><span
+class="me1">validate</span><span class="br0">&#40;</span><span
+class="re0">$_POST</span><span class="br0">&#41;</span><span
+class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span
+class="co1">// 是 POST 提交，并且表单验证通过</span>
+        try
+        <span
+class="br0">&#123;</span>
+            <span
+class="co1">// 创建 user 对象并保存</span>
+            <span
+class="re0">$user</span> <span class="sy0">=</span> <span
+class="kw2">new</span> User<span class="br0">&#40;</span><span
+class="re0">$form</span><span class="sy0">-&gt;</span><span
+class="me1">values</span><span class="br0">&#40;</span><span
+class="br0">&#41;</span><span class="br0">&#41;</span><span
+class="sy0">;</span>
+            <span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">save</span><span
+class="br0">&#40;</span><span class="br0">&#41;</span><span
+class="sy0">;</span>
+&nbsp;
+            <span
+class="co1">// 成功后输出新建用户对象的信息</span>
+            dump<span
+class="br0">&#40;</span><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">username</span><span
+class="sy0">,</span> <span class="st_h">'新建用户的用户名'</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+            dump<span
+class="br0">&#40;</span><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">password</span><span
+class="sy0">,</span> <span class="st_h">'新建用户的密码'</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+            dump<span
+class="br0">&#40;</span><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">id</span><span
+class="br0">&#40;</span><span class="br0">&#41;</span><span
+class="sy0">,</span> <span class="st_h">'新建用户的ID'</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+            <span
+class="kw3">exit</span><span class="sy0">;</span>
+        <span
+class="br0">&#125;</span>
+        catch <span
+class="br0">&#40;</span>AclUser_DuplicateUsernameException <span
+class="re0">$ex</span><span class="br0">&#41;</span>
+        <span
+class="br0">&#123;</span>
+            <span
+class="co1">// 捕获 AclUser_DuplicateUsernameException 异常，在表单中指出用户名存在重复问题</span>
+            <span
+class="re0">$form</span><span class="br0">&#91;</span><span
+class="st_h">'username'</span><span class="br0">&#93;</span><span
+class="sy0">-&gt;</span><span class="me1">invalidate</span><span
+class="br0">&#40;</span><span class="st0">&quot;您要注册用户名 <span
+class="es4">{$user-&gt;username}</span> 已经存在了&quot;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+        <span
+class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span
+class="co1">// 将表单对象传递给视图</span>
+    <span
+class="re0">$this</span><span class="sy0">-&gt;</span>_view<span
+class="br0">&#91;</span><span class="st_h">'form'</span><span
+class="br0">&#93;</span> <span class="sy0">=</span> <span
+class="re0">$form</span><span class="sy0">;</span>
+<span
+class="br0">&#125;</span></pre>
+
+<p>现在用浏览器访问 <a
+href="javascript:if(confirm('http://localhost:9000/todo/index.php?controller=users&action=register  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽�����������·���С�  \n\n����Ҫ�ӷ�������������?'))window.location='http://localhost:9000/todo/index.php?controller=users&action=register'" tppabs="http://localhost:9000/todo/index.php?controller=users&action=register">http://localhost/todo/index.php?controller=users&action=register</a>
+，不输入任何内容就点击“提交”按钮，将可以看到如下界面：</p>
+
+<div class="figure"><img
+src="users-register-code-01.png" tppabs="http://qeephp.com/upload/docs/qeephp-quickstart/images/users-register-code-01.png" alt="" />
+	<p>对验证信息的反馈</p>
+</div>
+
+<p>现在输入用户名为：imphper，密码为
+123456，提交后会看到如下内容：</p>
+
+<div class="figure"><img
+src="users-register-code-02.png" tppabs="http://qeephp.com/upload/docs/qeephp-quickstart/images/users-register-code-02.png" alt="" />
+	<p>注册成功后的输出信息</p>
+</div>
+
+<p>通过 phpMyAdmin
+可以看到刚刚输入的信息已经存入数据库了：</p>
+
+<div class="figure"><img
+src="users-register-code-03.png" tppabs="http://qeephp.com/upload/docs/qeephp-quickstart/images/users-register-code-03.png" alt="" />
+	<p>保存到数据库中的用户信息</p>
+</div>
+
+<p>为了方便后续开发，我们再修改一下 users 控制器的
+actionRegister() 方法：</p>
+
+<pre class="php code"><span
+class="co1">// 成功后输出新建用户对象的信息</span>
+dump<span
+class="br0">&#40;</span><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">username</span><span
+class="sy0">,</span> <span class="st_h">'新建用户的用户名'</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+dump<span
+class="br0">&#40;</span><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">password</span><span
+class="sy0">,</span> <span class="st_h">'新建用户的密码'</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+dump<span
+class="br0">&#40;</span><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">id</span><span
+class="br0">&#40;</span><span class="br0">&#41;</span><span
+class="sy0">,</span> <span class="st_h">'新建用户的ID'</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+<span
+class="kw3">exit</span><span class="sy0">;</span></pre>
+
+<p>改为：</p>
+
+<pre class="php code"><span
+class="co1">// 登录成功后，重定向浏览器</span>
+<span
+class="kw1">return</span> <span class="re0">$this</span><span
+class="sy0">-&gt;</span>_redirect<span class="br0">&#40;</span>url<span
+class="br0">&#40;</span><span class="st_h">'default/index'</span><span
+class="br0">&#41;</span><span class="br0">&#41;</span><span
+class="sy0">;</span></pre>
+
+<p>现在读者朋友们可以发挥自己的想象力，尝试输入不同的内容来测试表单的验证规则、过滤器设置，以及对重复用户名的检查
+:)</p>
+    </div>
+
+    <div class="nofloat"></div>
+  </div>
+
+  <div class="guide-footer">
+
+    <table border="0" width="100%">
+      <tr>
+        <td align="left" width="200">
+                    &laquo;
+          <a href="node-05users-register-model.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-register-model">用户注册（完善模型）</a>
+          
+        </td>
+
+        <td align="center">
+          本章：<a href="node-05users.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users">实现用户功能</a>
+          <br />
+          <a href="index-5.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/">返回索引页</a>
+        </td>
+
+        <td align="right" width="200">
+                    <a href="node-05users-login.htm" tppabs="http://qeephp.com/docs/qeephp-quickstart/node-05users-login">用户登录和注销</a>
+          &raquo;
+                  </td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
+
+    </div>
+
+    <!-- 整页 -->
+
+
+
+<div id="google-adsense-block720" style="margin: 10px auto 20px auto; width: 730px; height: 90px;"></div>
+
+
+  </div>
+</div>
+<!-- /core -->
+
+<!-- footer -->
+<div id="footer">
+  <div id="breadcrumbs">
+    <p>
+      <a href="index.htm" tppabs="http://qeephp.com/">返回首页</a>
+      &nbsp;&nbsp;
+      <a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a>
+      &nbsp;&nbsp;
+      <a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a>
+      &nbsp;&nbsp;
+      <a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a>
+      &nbsp;&nbsp;
+      <a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a>
+      &nbsp;&nbsp;
+      <a href="index-1.htm" tppabs="http://qeephp.com/bbs/">论坛</a>
+    </p>
+  </div>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /page-wrapper -->
+
+</body>

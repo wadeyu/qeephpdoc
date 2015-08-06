@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QeePHP/FleaPHP 开源开发框架 - 起源科技开源社区|中国领先的 PHP 开源解决方案提供商</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="base.css" tppabs="http://qeephp.com/qeephp/base.css" />
+<link rel="stylesheet" type="text/css" href="jquery-ui-081120.css" tppabs="http://qeephp.com/qeephp/jquery-ui-081120.css" />
+<script type="text/javascript" src="jquery-1.2.6.min.js" tppabs="http://qeephp.com/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.5.3-081202.min.js" tppabs="http://qeephp.com/qeephp/jquery-ui-1.5.3-081202.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+});
+</script>
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<!-- header -->
+<div id="header">
+  <div class="container clearfix">
+    <div id="header_nav">
+      <ul id="navigation">
+        <li class="first"><a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a></li>
+        <li><a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a></li>
+        <li><a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a></li>
+        <li><a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<!-- /header -->
+
+
+<!-- core -->
+<div id="core" class="clearfix">
+  <div class="container clearfix">
+
+    <div id="fullpage" class="contents">
+
+      
+<div id="downloads">
+
+  <div id="downloads-btn">
+    <a href="qeephp.htm" tppabs="http://qeephp.com/projects/qeephp">下载</a>
+  </div>
+  
+  <div id="downloads-ad">
+  
+    <h1>What's So Great About QeePHP?</h1>
+  
+    <ul class="tabs clearfix">
+      <li><a href="#thinking">新思想</a></li>
+      <li><a href="#efficiency">提高生产力</a></li>
+      <li><a href="#expandability">扩展能力</a></li>
+      <li><a href="#performance">高性能</a></li>
+      <li><a href="#opensource">创新与开放</a></li>
+    </ul>
+    
+    <div class="text" id="thinking">
+      <h2>领域驱动开发</h2>
+      <p>一直以来，PHP 开发者总是在不断重复着各种各样的 CRUD 操作。但随着 Web 应用程序变得越来越复杂，简单的 CRUD 操作已经无法满足对于复杂应用程序的开发要求。</p>
+	  <p>此时，我们需要一种新的开发模式和开发思想来应对快速变化的复杂需求。</p>
+    </div>
+    
+    <div class="text" id="efficiency">
+      <h2>集中精力于业务领域</h2>
+      <p>凭借 QeePHP 创新的架构和开发模式，开发者现在可以集中精力于业务领域，不用为各种基础问题消耗精力与时间。
+         从而在快速的需求变化中，始终保持最高效率。</p>
+      <p>QeePHP 还提供基于 Web 界面的工具帮助开发者减少重复性劳动，进一步提高生产力。</p>
+    </div>
+    
+    <div class="text" id="expandability">
+      <h2>创新架构赋予无限的扩展能力</h2>
+      <p>QeePHP 采用“内核+扩展”的创新架构，除了核心的基本服务，所有其他功能模块都是按需选用。这种中心 &raquo; 分散的架构模式，让应用程序具有充分的扩展能力。
+         允许开发者按照自己的需要来扩展框架本身，实现随需应变的目标。</p>
+    </div>
+    
+    <div class="text" id="performance">
+      <h2>QeePHP 具有卓越的性能表现</h2>
+      <p>对于 Web 应用，对性能的要求始终是一项重要指标。规模越大的应用，对性能、响应时间的要求就越高。
+         而 QeePHP 的创新架构不但提供了充分的扩展能力和灵活性，还是 QeePHP 高性能的保证。</p>
+	  <p>配合 QeePHP 提供的多种缓存服务，开发者可以制定满足各种需求的缓存方案，将应用程序的性能提高到极致，为用户提供出色的使用体验。</p>
+    </div>
+    
+    <div class="text" id="opensource">
+      <h2>我们创造、我们分享</h2>
+      <p>我们一直以来都是国内最具创新思想的开源团队之一。</p>
+      <p>我们不断创新，并与社区分享我们的新创造。虽然一直被模仿，但我们从未被超越！</p>
+    </div>
+    
+  </div>
+
+  <div id="downloads-balloon"></div>
+
+</div>
+
+<script type="text/javascript">
+$("#downloads-ad > div.text").hide().eq(0).show();
+$("#downloads-ad > ul > li > a").eq(0).addClass("current");
+$("#downloads-ad > ul > li > a").click(function() {
+	e = $(this);
+	if (e.hasClass("current")) return false;
+	
+	$("#downloads-ad > ul > li > a").removeClass('current');
+	e.addClass("current");
+
+	id = this.href.substr(this.href.indexOf('#', 0) + 1);
+	$("#downloads-ad > div.text").hide();
+	$("#" + id).show();
+	return false;
+});
+
+</script>
+
+
+    </div>
+
+  </div>
+</div>
+<!-- /core -->
+
+<!-- footer -->
+<div id="footer">
+  <div id="breadcrumbs">
+    <p>
+      <a href="index.htm" tppabs="http://qeephp.com/">返回首页</a>
+      &nbsp;&nbsp;
+      <a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a>
+      &nbsp;&nbsp;
+      <a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a>
+      &nbsp;&nbsp;
+      <a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a>
+      &nbsp;&nbsp;
+      <a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a>
+      &nbsp;&nbsp;
+      <a href="index-1.htm" tppabs="http://qeephp.com/bbs/">论坛</a>
+    </p>
+  </div>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /page-wrapper -->
+
+</body>

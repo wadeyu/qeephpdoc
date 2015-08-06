@@ -1,0 +1,2032 @@
+@charset "utf-8";
+
+/**
+ * (C) Copyright QeeYuan. Ltd. 2008.
+ */
+
+* { padding: 0; margin: 0; }
+
+/**********************************************************
+ * 基本样式
+ **********************************************************/
+
+body {
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#page-wrapper {
+	overflow: hidden;
+	min-width: 980px;
+}
+
+a {
+	color: #3b4b65;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #e79d35;
+}
+
+.p50 {
+	width: 50%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden {
+	display: none;
+}
+
+.hot {
+	color: #ac2424;
+	font-weight: bold;
+}
+
+a.hot {
+	text-decoration: none;
+}
+
+a.hot:hover {
+	color: #000;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom:1;
+	display: inline-block;
+	_height:1px;
+}
+
+.nofloat {
+    clear: both;
+    float: none;
+}
+
+/* Hides from IE-mac */
+* html .clearfix { height: 1%; }
+*+html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/**********************************************************
+ * mime
+ **********************************************************/
+
+.mime-html {
+	background: url("mime-html.gif"/*tpa=http://qeephp.com/qeephp/mime-html.gif*/) no-repeat;
+}
+
+.mime-pdf {
+	background: url("mime-pdf.gif"/*tpa=http://qeephp.com/qeephp/mime-pdf.gif*/) no-repeat;
+}
+
+.mime-package {
+	background: url("mime-package.gif"/*tpa=http://qeephp.com/qeephp/mime-package.gif*/) no-repeat;
+}
+
+.mime-chm {
+	background: url("mime-chm.gif"/*tpa=http://qeephp.com/qeephp/mime-chm.gif*/) no-repeat;
+}
+
+/**********************************************************
+ * 表单
+ **********************************************************/
+
+form {
+	margin: 2em;
+	font-size: 14px;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset p {
+	margin: 0 0 0.5em 0;
+	text-indent: 0;
+}
+
+fieldset label {
+	clear: right;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+fieldset label.important {
+	color: red;
+}
+
+fieldset span.tips {
+	display: block;
+	font-size: 12px;
+	color: #999;
+}
+
+fieldset span.tips strong {
+	color: #900;
+}
+
+fieldset span.error {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	color: #c00;
+}
+
+form .txt {
+	vertical-align:middle;
+	font-size: 14px;
+	margin-bottom: 0.5em;
+}
+
+form .medium {
+	width: 320px;
+}
+
+form .small {
+	width: 180px;
+}
+
+form .full {
+	width: 100%;
+}
+
+input.btn {
+	font-size: 14px;
+	width: 90px;
+	height: 25px;
+}
+
+form .req {
+	font-size: 12px;
+	font-weight: bold;
+	color: red;
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+
+/**********************************************************
+ * 全局样式
+ **********************************************************/
+
+.container {
+	text-align: left;
+	margin: 0 auto 0 auto;
+	width: 980px;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	line-height: 120%;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #2b3b55;
+	line-height: 140%;
+	padding-bottom: 12px;
+    margin-bottom: 0;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2b3b55;
+	line-height: 140%;
+	margin: 24px 0 10px 0;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2b3b55;
+	line-height: 140%;
+	margin-bottom: 8px;
+}
+
+p {
+	line-height: 140%;
+	text-indent: 2em;
+}
+
+.contents ul, .contents ol {
+	margin-left: 2em;
+}
+
+.contents hr {
+	clear: both;
+	float: none;
+	height: 1px;
+	border: none;
+	border-top: 1px solid #ddd;
+	margin: 1.4em 4em 2em 4em !important;
+	>margin: 0 4em 1em 4em !important;
+	margin: 0 4em 1em 4em;
+}
+
+img.left {
+	margin: 4px 20px 20px 4px;
+}
+
+img.right {
+	margin: 4px 4px 20px 20px;
+}
+
+li.empty {
+	list-style: none;
+}
+
+.TB_modal h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	padding-left: 70px;
+	background: url("popup_info.gif"/*tpa=http://qeephp.com/qeephp/popup_info.gif*/) no-repeat;
+	line-height: 24px;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+.TB_modal p {
+	font-size: 14px;
+	color: #555;
+	line-height: 26px;
+}
+
+.TB_modal input.btn {
+	font-size: 14px;
+	width: 120px;
+	height: 25px;
+}
+
+#flash_message {
+	display: block;
+	margin: 40px 50px 40px 50px;
+	padding: 1px;
+	border: 1px solid #cad9ea;
+}
+
+#flash_message h3 {
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	padding-left: 20px;
+	border-bottom: 1px solid #cad9ea;
+	background: url("flash_message_bg.gif"/*tpa=http://qeephp.com/qeephp/flash_message_bg.gif*/) repeat-x;
+}
+
+#flash_message p {
+	padding: 20px;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+div.tips {
+	padding: 1em;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	background-color: #d6f0c9;
+	color: #030;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+div.tips li {
+	font-size: 12px;
+}
+
+/**********************************************************
+ * 分页导航条
+ **********************************************************/
+
+.pagination {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pagination p {
+  float: left;
+  color: #666;
+  text-indent: 0;
+  padding: 2px 0 0 0;
+  margin: 0 2em 0 0;
+}
+
+.pagination ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pagination li {
+  list-style: none;
+  background-color: #fff;
+  margin: 0px;
+  display: block;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+
+.pagination li.disabled {
+  border: 1px solid #DDDDDD;
+  padding: 2px 6px 2px 6px;
+  color: #ccc;
+}
+
+.pagination li.current {
+  border: 1px solid #2E6AB1;
+  padding: 2px 6px 2px 6px;
+  background-color: #2E6AB1;
+  color: #fff;
+}
+
+.pagination li.none {
+  border: 1px none;
+  padding: 2px 6px 2px 6px;
+}
+
+.pagination li a {
+  border: 1px solid #9AAFE5;
+  padding: 2px 6px 2px 6px;
+  display: block;
+  text-decoration: none;
+}
+
+.pagination li a:hover {
+  border: 1px solid #2E6AB1;
+}
+
+
+/**********************************************************
+ * 页头
+ **********************************************************/
+
+#header {
+	height: 95px;
+}
+
+#header a span {
+	display: none;
+}
+
+#logo {
+	background: url("logo.jpg"/*tpa=http://qeephp.com/qeephp/logo.jpg*/) no-repeat;
+	display: block;
+	width: 320px;
+	height: 77px;
+	float: left;
+	margin-top: 6px;
+}
+
+#header div.right {
+	width: 500px;
+}
+
+a#qeeyuan {
+	background: url("qeeyuan_link.jpg"/*tpa=http://qeephp.com/qeephp/qeeyuan_link.jpg*/) no-repeat;
+	display:block;
+	height:16px;
+	width:249px;
+	margin-top: 26px;
+	margin-left: 120px;
+}
+
+#header_nav {
+	width: 520px;
+	float: right;
+	height: 90px;
+	text-align: right;
+}
+
+ul#user_info {
+	height: 14px;
+	list-style: none;
+	margin-top: 4px;
+}
+
+#user_info li {
+	list-style: none;
+	display: inline;
+	padding: 0 0 0 26px;
+}
+
+#user_info li a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #333;
+	padding-left: 16px;
+	background-repeat: no-repeat;
+	background-position: 0px 2px !important;
+	background-position: 0px 1px;
+}
+
+#user_info li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#user_info li.first {
+	border: none;
+}
+
+#user_info a.login {
+	background-image: url("key.gif"/*tpa=http://qeephp.com/qeephp/key.gif*/);
+}
+
+#user_info a.register {
+	background-image: url("user.gif"/*tpa=http://qeephp.com/qeephp/user.gif*/);
+}
+
+ul#navigation {
+	height: 20px;
+	list-style: none;
+	margin-top: 8px;
+}
+
+#navigation li {
+	list-style: none;
+	display: inline;
+	padding-left: 26px;
+	margin: 3px 0 3px 0;
+	background: url("spc.gif"/*tpa=http://qeephp.com/qeephp/spc.gif*/) no-repeat left top;
+}
+
+#navigation li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #ac2424;
+	font-weight: bold;
+}
+
+#navigation li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#navigation li.first {
+	border: none;
+	background: none;
+}
+
+#search_form {
+	float: right;
+	margin-top: 12px;
+}
+
+#search_form input.txt {
+	font-size: 12px;
+	height: 14px;
+	width: 16em;
+	padding: 1px 2px 3px 2px;
+	border: 1px solid #aaa;
+	margin: 0 8px 0 0;
+}
+
+#sub_search_form {
+	height: 25px;
+	width: 305px;
+}
+
+#sub_search_form input.btn {
+	font-size: 14px;
+	width: 90px;
+	height: 25px;
+	float: left;
+	margin-left: 9px;
+}
+
+#sub_search_form input.txt {
+	width: 200px;
+	font-size: 16px;
+	height: 19px;
+	border: 1px solid #aaa;
+	padding: 2px;
+	float: left;
+}
+
+
+/**********************************************************
+ * 页面中部
+ **********************************************************/
+
+#core {
+	background-color: #f7f9f8;
+	background-image: url("core_bg.jpg"/*tpa=http://qeephp.com/qeephp/core_bg.jpg*/);
+	background-repeat: repeat-x;
+	padding-bottom: 1em;
+}
+
+
+/**********************************************************
+ * full page
+ **********************************************************/
+
+#fullpage {
+	padding: 18px 20px 18px 20px;
+}
+
+/**********************************************************
+ * sidebar
+ **********************************************************/
+
+#sidebar {
+	padding: 18px 20px 18px 0px;
+	width: 355px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#sidebar .contents p, #subpage_sidebar .contents p, p.contents {
+	line-height: 140%;
+	padding-bottom: 0.5em;
+	clear: left;
+	float: none;
+}
+
+#sidebar .contents li, #subpage_sidebar .contents li {
+	line-height: 140%;
+	padding-bottom: 0.2em;
+}
+
+#sidebar .contents ul, #subpage_sidebar .contents ul {
+	margin-bottom: 1em;
+}
+
+#sidebar h2, #sidebar h3 {
+	margin: 0.5em 0 0 0;
+}
+
+#subpage_sidebar {
+	padding: 18px 20px 18px 0px;
+	width: 255px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#subpage_sidebar2 {
+	padding: 18px 20px 18px 0px;
+	width: 185px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+	/**********************************************************
+	 * tabs1
+	 **********************************************************/
+
+	#tabs1 {
+		font-size: 12px;
+		margin-bottom: 1em;
+	}
+
+	#tabs1 hr {
+		height: 1px;
+		margin: 0.5em 0 0.5em 0;
+		padding: 0;
+		border: none;
+		border-top: 1px solid #ddd;
+	}
+
+	#tabs1 ul {
+		line-height: 160%;
+	}
+
+	/**********************************************************
+	 * updates
+	 **********************************************************/
+
+	#updates ul, #updates li {
+		list-style: none;
+		margin: 0;
+	}
+
+	#updates p {
+		margin: 0;
+		text-indent: 0;
+		padding: 0;
+		line-height: 120%;
+        font-family: "宋体";
+	}
+
+	#updates a.revision {
+		color: #000;
+		font-weight: bold;
+		margin-right: 1em;
+	}
+
+	#updates a.revision:hover {
+		color: #000;
+	}
+
+	#updates .date {
+		margin-right: 1em;
+	}
+
+	#updates p.comments {
+		color: #333;
+		margin-left: 4em;
+		margin-bottom: 0.5em;
+	}
+
+
+/**********************************************************
+ * col2
+ **********************************************************/
+
+#col2 {
+	padding: 18px 0 18px 0;
+	width: 590px;
+	font-size: 12px;
+}
+
+#col3 {
+	padding: 18px 0 18px 0;
+	width: 690px;
+	font-size: 12px;
+}
+
+#col4 {
+	padding: 18px 0 18px 0;
+	width: 760px;
+	font-size: 12px;
+}
+
+
+	/**********************************************************
+	 * topics
+	 **********************************************************/
+
+	.topics-title h1 {
+		line-height: 22px;
+		margin: 0 0 10px 0;
+		padding: 0;
+	}
+
+	.topics-title p {
+		text-indent: 0;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.topics-title h1 a:hover {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.topics-thumb {
+		padding: 10px;
+	}
+
+	/**********************************************************
+	 * projects
+	 **********************************************************/
+
+	.projects-title img {
+		width: 32px;
+		height: 32px;
+		padding: 0;
+		margin: 4px 16px 4px 0;
+		float: left;
+	}
+
+	.projects-title h1 {
+		line-height: 22px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.projects-title p {
+		text-indent: 0;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.projects-title h1 a:hover {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.projects-files {
+		margin-bottom: 2em;
+	}
+
+	.projects-files h2 {
+		font-size: 14px;
+		font-weight: bold;
+		color: #333;
+	}
+
+	.projects-files li {
+		font-size: 12px;
+		color: #666;
+		line-height: 140%;
+	}
+
+	.projects-files .summary {
+		color: #333;
+	}
+
+    #files-tabs p {
+        text-indent: 0;
+        margin-bottom: 1em;
+    }
+
+    #files-tabs span.tag {
+        color: green;
+    }
+
+
+	/**********************************************************
+	 * projects & cases
+	 **********************************************************/
+
+	h1.not-approbated, h1.not-approbated a {
+		color: #999;
+		font-style: italic;
+	}
+
+	span.not-approbated {
+		color: #eee;
+		font-size: 12px;
+		font-weight: normal;
+		margin-left: 8px;
+		background-color: #999;
+		padding: 2px;
+		font-style: normal;
+	}
+
+	span.pending-delete {
+		color: #fff;
+		font-size: 12px;
+		font-weight: normal;
+		margin-left: 8px;
+		background-color: #c00;
+		padding: 2px;
+		font-style: normal;
+	}
+
+	ul.meta {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0 !important;
+		margin: 0 0 8px 0;
+	}
+
+	.meta li {
+		list-style: none;
+		float: left;
+		line-height: 24px;
+		padding: 0;
+		margin: 0 1.2em 0 0;
+		font-size: 12px;
+		color: #666;
+		margin-bottom: 0.5em;
+	}
+
+	.meta li a {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.meta li strong {
+		font-size: 12px;
+		color: #2b3b55;
+	}
+
+	.meta li strong.hot {
+		color: #ac2424;
+	}
+
+	ul.urls {
+		list-style: none;
+		padding: 0;
+		margin-left: 4em;
+	}
+
+	.urls li {
+		line-height: 24px;
+		padding-left: 16px;
+	}
+
+	.urls li.project_url {
+		background: url("icn_project_url.gif"/*tpa=http://qeephp.com/qeephp/icn_project_url.gif*/) no-repeat left 6px;
+	}
+
+	.urls li.demo_url {
+		background: url("icn_demo_url.gif"/*tpa=http://qeephp.com/qeephp/icn_demo_url.gif*/) no-repeat left 6px;
+	}
+
+	.urls li.doc_url {
+		background: url("icn_doc_url.gif"/*tpa=http://qeephp.com/qeephp/icn_doc_url.gif*/) no-repeat left 6px;
+	}
+
+	div.formatted {
+		margin-top: 1em;
+		line-height: 160%;
+		font-size: 14px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+	.formatted p {
+		line-height: 160%;
+		margin-bottom: 0.5em;
+	}
+
+	.formatted h1 {
+		font-size: 22px;
+	}
+
+	.formatted h2, .formatted h3 {
+		margin-top: 2.5em;
+	}
+
+	.formatted h4 {
+		margin: 16px 0 8px 2em;
+	}
+
+	.formatted hr {
+		clear: both;
+		float: none;
+		height: 1px;
+		border: none;
+		border-top: 1px solid #ddd;
+		margin: 1.4em 8em 2em 4em !important;
+		>margin: 0 4em 1em 4em !important;
+		margin: 0 4em 1em 4em;
+	}
+
+	.formatted ul, .formatted ol {
+		margin-left: 4em;
+		margin-bottom: 2em;
+	}
+
+	.formatted li, .formatted li p {
+		text-indent: 0;
+		margin-left: 0;
+	}
+
+	.formatted div.figure {
+		text-align: center;
+		margin-bottom: 18px;
+	}
+
+	.formatted div.figure img {
+		margin-bottom: 6px;
+		border: 1px solid #aaa;
+		padding: 10px;
+		background-color: #eee;
+	}
+
+	.formatted div.figure p {
+		font-size: 12px;
+		color: #666;
+	}
+
+	.formatted table {
+		padding: 0px;
+		width: 98%;
+		font-size: 12px;
+		border-collapse: collapse;
+		margin-bottom: 14px;
+	}
+
+	.formatted table thead th {
+		color: #4f6b72;
+		border: 1px solid #c1dad7;
+		text-align: left;
+		padding: 5px 0px 2px 8px;
+		background: #cae8ea url("table_data_bg.jpg"/*tpa=http://qeephp.com/qeephp/table_data_bg.jpg*/) repeat-x;
+	}
+
+	.formatted table tbody th {
+		width: 160px;
+	}
+
+	.formatted table tbody th, .formatted table tbody td {
+		border: 1px solid #c1dad7;
+		padding: 2px 2px 2px 8px;
+	}
+
+	.formatted table tr.odd th, .formatted table tr.odd td {
+		background-color: #fff;
+		color: #4f6b72;
+	}
+
+	.formatted table tr.even th, .formatted table tr.even td {
+		background: #f5fafa;
+		color: #797268;
+	}
+
+	.formatted blockquote {
+		background-color: #ffc;
+		color: #f60;
+		font-size: 12px;
+		padding: 10px 20px 4px 20px;
+	  word-break: break-all;
+  	word-wrap: break-word;
+		text-indent: 0;
+		margin-bottom: 1em;
+	}
+
+	.formatted blockquote p {
+		text-indent: 0;
+	}
+
+	/**********************************************************
+	 * cases
+	 **********************************************************/
+
+	.cases-thumb {
+		padding: 10px;
+	}
+
+	.cases-title img {
+		width: 32px;
+		height: 32px;
+		padding: 0;
+		margin: 4px 16px 4px 0;
+		float: left;
+	}
+
+	.cases-title h1 {
+		line-height: 22px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.cases-title p {
+		text-indent: 0;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.cases-title h1 a:hover {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.cases-files {
+		margin-bottom: 2em;
+	}
+
+	.cases-files h2 {
+		font-size: 14px;
+		font-weight: bold;
+		color: #333;
+	}
+
+	.cases-files li {
+		font-size: 12px;
+		color: #666;
+		line-height: 140%;
+	}
+
+	.cases-files .summary {
+		color: #333;
+	}
+
+	ul.thumbs, .thumbs li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.thumbs li {
+		float: left;
+		margin: 0 10px 5px 0;
+		overflow: hidden;
+	}
+
+	.thumbs p {
+		text-indent: 0;
+		text-align: left;
+	}
+
+	img.thumb {
+		display: block;
+		border: 1px solid #ccc;
+	}
+
+	a:hover img.thumb {
+		border: 1px solid #000;
+	}
+
+
+
+	/**********************************************************
+	 * threads
+	 **********************************************************/
+
+	.threads a {
+		color: #000;
+        font-family: "宋体";
+		text-decoration: none;
+	}
+
+	.threads a:hover {
+		color: #e79d35;
+		text-decoration: underline;
+	}
+
+	.threads li {
+		padding: 0.2em 0 0.2em 0;
+	}
+
+	#latest_threads, #newbie_threads {
+		margin-right: 1em;
+	}
+
+	#picked_threads {
+	}
+
+
+	/**********************************************************
+	 * box
+	 **********************************************************/
+
+	.box {
+		font-size: 12px;
+		line-height: 140%;
+		border: 1px solid #bbb;
+		color: #000;
+		padding: 0 0 0.2em 0;
+		margin: 0 0 1em 0;
+		background-color: #fff;
+	}
+
+	.box h4 {
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 0.2em 0.8em;
+		color: #000;
+		background-color: #d5d5d5;
+		border-bottom: 1px solid #e3e3e3;
+	}
+
+	.box h4.blue {
+		color: #fff;
+		background-color: #1b4475;
+	}
+
+	.box h4.yellow {
+		color: #fff;
+		background-color: #e8641b;
+	}
+
+	.box h4 span {
+		font-size: 12px;
+		font-weight: normal;
+		color: #333;
+	}
+
+	.box h4 span a {
+		color: #333;
+	}
+
+	.box h4 span a:hover {
+		color: #e79d35;
+	}
+
+	.box ul {
+		padding: 0.2em 1em 0.5em 1.5em;
+		line-height: 140%;
+		margin-left: 1em;
+	}
+
+	.box-cnt {
+		padding: 4px 12px 6px 12px;
+		font-size: 14px;
+	}
+
+	.box-cnt p {
+		text-indent: 0;
+	}
+
+	.box-cnt a {
+		white-space: nowrap;
+	}
+
+	.box-cnt ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.box-cnt li {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+
+
+	/**********************************************************
+	 * calendar
+	 **********************************************************/
+
+	#calendar {
+		font-size: 12px;
+	}
+
+	#calendar ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	#calendar li {
+		padding-left: 0;
+		list-style: none;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+
+	#calendar .date {
+		color: #003;
+		text-align: center;
+		width: 80px;
+		float: left;
+		background-color: #e3e3e3;
+		border: 1px solid #eee;
+	}
+
+	#calendar .subject {
+		display: block;
+		width: 470px;
+		margin-left: 90px;
+	}
+
+	#calendar h2 {
+		margin: 0 0 0.2em 0;
+		padding: 0;
+	}
+
+	#calendar h2 a {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 110%;
+		color: #000;
+		text-decoration: none;
+	}
+
+	#calendar h2 a:hover {
+		color: #e79d35;
+		text-decoration: underline;
+	}
+
+
+	/**********************************************************
+	 * user controlpanel
+	 **********************************************************/
+
+	a.icn_my_projects {
+		padding-left: 16px;
+		text-decoration: none;
+		background: url("plugin.gif"/*tpa=http://qeephp.com/qeephp/plugin.gif*/) no-repeat 0 4px !important;
+		background: url("plugin.gif"/*tpa=http://qeephp.com/qeephp/plugin.gif*/) no-repeat 0 2px;
+	}
+
+	a.icn_my_cases {
+		padding-left: 16px;
+		text-decoration: none;
+		background: url("case.gif"/*tpa=http://qeephp.com/qeephp/case.gif*/) no-repeat 0 4px !important;
+		background: url("case.gif"/*tpa=http://qeephp.com/qeephp/case.gif*/) no-repeat 0 2px;
+	}
+
+	a.icn_login {
+		padding-left: 16px;
+		text-decoration: none;
+		background: url("key.gif"/*tpa=http://qeephp.com/qeephp/key.gif*/) no-repeat 0 4px !important;
+		background: url("key.gif"/*tpa=http://qeephp.com/qeephp/key.gif*/) no-repeat 0 2px;
+	}
+
+	a.icn_register {
+		padding-left: 16px;
+		text-decoration: none;
+		background: url("user.gif"/*tpa=http://qeephp.com/qeephp/user.gif*/) no-repeat 0 4px !important;
+		background: url("user.gif"/*tpa=http://qeephp.com/qeephp/user.gif*/) no-repeat 0 2px;
+	}
+
+
+/**********************************************************
+ * downloads
+ **********************************************************/
+
+#downloads {
+	background: url("downloads-bg.gif"/*tpa=http://qeephp.com/qeephp/downloads-bg.gif*/) no-repeat;
+	height: 800px;
+	overflow: visible !important;
+	overflow: hidden;
+}
+
+#downloads-btn {
+	position: relative;
+	left: 38px;
+	top: 172px;
+	display: block;
+	background: url("downloads-btn.gif"/*tpa=http://qeephp.com/qeephp/downloads-btn.gif*/) no-repeat;
+	width: 336px;
+	height: 105px;
+}
+
+#downloads-btn a {
+	display:  block;
+	width: 336px;
+	height: 105px;
+	text-indent: -9999px;
+}
+
+#downloads-ad {
+	position: relative;
+	top: 240px;
+	left: -10px;
+	width: 901px;
+	height: 376px;
+	background: url("downloads-adbg.gif"/*tpa=http://qeephp.com/qeephp/downloads-adbg.gif*/) no-repeat;
+	padding: 40px 20px 19px 39px;
+	overflow: hidden;
+	margin: 0;
+}
+
+#downloads-ad h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 34px;
+	font-weight: bold;
+	color: #666;
+	margin: 0 0 10px 0;
+	padding: 0;
+	height: 44px;
+}
+
+#downloads-ad ul.tabs {
+	list-style: none;
+	margin: 0 0 2em 0;
+	padding: 0;
+	height: 20px;
+}
+
+#downloads-ad ul.tabs li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0 4em 0 0;
+}
+
+#downloads-ad ul.tabs li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #0489b7;
+}
+
+#downloads-ad ul.tabs li a.current {
+	color: #666;
+}
+
+#downloads-ad ul.tabs li a:hover {
+	text-decoration: underline;
+}
+
+#downloads-ad div.text {
+	font-size: 14px;
+	color: #666;
+	line-height: 160%;
+	height: 276px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+#downloads-ad div.text h2 {
+	font-size: 20px;
+	color: #666;
+	font-weight: normal;
+}
+
+#downloads-ad div.text p {
+	width: 380px;
+	line-height: 160%;
+	margin-bottom: 0.5em;
+}
+
+#downloads-balloon {
+	position: relative;
+	left: 490px;
+	top: -610px;
+	width: 470px;
+	height: 460px;
+	display: block;
+	background: url("downloads-balloon.gif"/*tpa=http://qeephp.com/qeephp/downloads-balloon.gif*/) no-repeat;
+}
+
+#downloads-ad div#thinking {
+	background-image: url("ad-thinking.gif"/*tpa=http://qeephp.com/qeephp/ad-thinking.gif*/);
+}
+
+
+/**********************************************************
+ * footer
+ **********************************************************/
+
+#footer {
+	border-top: 1px solid #ddd;
+	min-height: 8em;
+}
+
+#breadcrumbs {
+	height:36px;
+	line-height:normal;
+	text-align: center;
+}
+
+#breadcrumbs p {
+	padding: 12px 0 12px 0;
+}
+
+#breadcrumbs a {
+	color: #ac2424;
+	text-decoration: underline;
+}
+
+#breadcrumbs a:hover {
+	color: #000;
+}
+
+#footer hr {
+	border: none;
+	border-top: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
+#footer_contents {
+	margin: 0 auto 10px;
+	width: 915px;
+}
+
+#footer .col {
+	float: left;
+	padding: 0 10px;
+	width: 160px;
+	text-align: left;
+	margin: 0 auto 0 auto;
+}
+
+#footer h4 {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+#footer ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#footer li {
+	margin-bottom:8px;
+}
+
+#footer li a {
+	color: #333;
+	text-decoration: none;
+}
+
+#footer li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#footer .news li {
+	border-bottom:1px dotted #ddd;
+	margin-bottom:8px;
+	padding-bottom:8px;
+}
+
+#footer p {
+	margin-bottom:10px;
+	color: #666;
+}
+
+#footer a img {
+	clear: both;
+	float: none;
+	border: none;
+}
+
+#footer #copyright {
+	margin-bottom: 2em;
+}
+
+
+/**********************************************************
+ * geshi
+ **********************************************************/
+
+pre.code {
+  background-color: #eeeeec;
+  border: 1px solid #d3d7cf;
+  color: #555;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 120%;
+  padding: 15px;
+  overflow: auto !important;
+  overflow: scroll;
+  display: block;
+  margin: 0.5em 0 0.5em 0;
+}
+
+#col4 pre.code {
+	width: 716px;
+}
+
+#col4 li pre.code {
+	width: 668px;
+}
+
+pre.code .co1, pre.code .co2,
+pre.code .co3, pre.code .co4,
+pre.code .coMULTI {
+  color: #8f5902;
+  font-weight: normal;
+}
+pre.code .kw2 {
+  color: #4e9a06;
+}
+pre.code .kw3 {
+  color: #4e9a06;
+}
+pre.code .me1, pre.code .me2 {
+  color: #204a87;
+}
+pre.code .sy0 {
+  color: #4e9a06;
+}
+pre.code .st_0, pre.code .st_h, pre.code .st0,
+pre.code .br0
+{
+  color: #a40000;
+}
+pre.code .es0, pre.code .es1, pre.code .es2,
+pre.code .es3, pre.code .es4, pre.code .es5,
+pre.code .es6, pre.code .es_h
+{
+  color: #0c0;
+}
+pre.code .nu0, pre.code .nu19 {
+  color: #000;
+}
+pre.code .nu8 {
+  color: #000;
+}
+pre.code .nu12 {
+  color: #000;
+}
+
+pre.code .kw1 {
+  color: #4e9a06;
+}
+pre.code .re0 {
+  color: #204a87;
+}
+
+
+/**********************************************************
+ * apidoc
+ **********************************************************/
+
+.apidoc-index {
+	margin-left: 2em;
+}
+
+.apidoc-index h1 {
+	margin-bottom: 0;
+	line-height: 180%;
+}
+
+.apidoc-index h2 {
+	margin: 0 0 0.5em 0;
+	padding: 4px 0 4px 1em;
+	background-color: #213449;
+	color: #fff;
+}
+
+.apidoc-index ul#tabs-packages {
+	margin-top: 16px;
+}
+
+td.package-description {
+	font-size: 14px;
+	padding-right: 2em;
+	line-height: 160%;
+	width: 380px;
+}
+
+p.class-name, p.class-summary {
+	text-indent: 0;
+}
+
+p.class-name a {
+	color: #069;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+p.class-name a:hover {
+	color: #900;
+}
+
+p.class-summary {
+	color: #666;
+	margin-bottom: 1em;
+}
+
+.apidoc-classes-index {
+	text-indent: 0;
+}
+
+.apidoc-classes-index h3 {
+	margin: 0 0 0.2em 0;
+}
+
+.apidoc-classes-index ul, .apidoc-classes-index li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 140%;
+}
+
+.apidoc-classes-index ul {
+	margin-left: 12px;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+.apidoc-classes-index a {
+	color: #333;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.apidoc-classes-index a:hover {
+	color: #900;
+	text-decoration: underline;
+}
+
+.apidoc-class {
+}
+
+.apidoc-class ul.nav {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0 !important;
+	margin: 0 0 8px 0;
+}
+
+.apidoc-class ul.nav li {
+	list-style: none;
+	float: left;
+	line-height: 24px;
+	padding: 0;
+	margin: 0 1.2em 0 0;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 0.5em;
+}
+
+.apidoc-class ul.nav li a {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.apidoc-class ul.nav li strong {
+	font-size: 12px;
+	color: #2b3b55;
+}
+
+.apidoc-class ul.nav li strong.hot {
+	color: #ac2424;
+}
+
+.apidoc-class ul.nav li.more a {
+	margin-left: 4em;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.apidoc-class table.summary-table {
+	font-size: 12px;
+	padding: 0;
+	width: 100%;
+	border: 1px solid #999;
+	border-collapse: collapse;
+	margin: 0 0 1em 0;
+}
+
+.apidoc-class table.summary-table tr {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.apidoc-class table.summary-table td {
+	line-height: 140%;
+	padding: 0.5em 1em;
+	border: 1px solid #ccc;
+}
+
+.apidoc-class table.summary-table th {
+	line-height: 140%;
+	width: 120px;
+	background-color: #eee;
+	padding: 0.5em 1em;
+	border: 1px solid #ccc;
+}
+
+.apidoc-class div.formatted {
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+
+.apidoc-class div.summary {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+.apidoc-class div.summary p {
+	text-indent: 0;
+}
+
+.apidoc-class table.list-table {
+	font-size: 12px;
+	padding: 0;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0 1em 0;
+}
+
+.apidoc-class table.list-table a {
+	text-decoration: none;
+}
+
+.apidoc-class table.list-table tr {
+	padding: 0;
+	margin: 0;
+	border: none;
+	line-height: 120%;
+}
+
+.apidoc-class table.list-table td {
+	border: 1px solid #ddd;
+	padding: 0.3em 1em;
+}
+
+.apidoc-class table.list-table th {
+	background-color: #eee;
+	padding: 0.5em 1em;
+	border: 1px solid #ddd;
+}
+
+
+.apidoc-class div.details {
+
+}
+
+.apidoc-class div.details div.name {
+	border-bottom: 1px solid #bfcfff;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin: 30px 0 5px 0;
+}
+
+.apidoc-class div.details div.name span.tags {
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+
+.apidoc-class div.details div.formatted {
+	border: none;
+	margin-bottom: 4em;
+}
+
+.apidoc-class div.details table.list-table {
+	color: #333;
+}
+
+.apidoc-class div.details .param_name {
+	font-weight: bold;
+}
+
+.signature2 {
+	color: #069;
+	line-height: 160%;
+	font-size: 14px;
+}
+
+
+/**********************************************************
+ * guide
+ **********************************************************/
+
+.guide-index {
+	margin-left: 2em;
+}
+
+.guide-index h2 {
+}
+
+div#columns-chapters {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+div.column-chapter-4 {
+	float: none;
+	clear: both;
+	width: 940px;
+}
+
+div.column-chapter-3 {
+	float: none;
+	clear: both;
+	width: 940px;
+}
+
+div.column-chapter-3 div.chapter-summary {
+	width: 310px;
+}
+
+div.column-chapter-4 div.chapter-summary {
+	width: 225px;
+}
+
+div.chapter-summary {
+	font-size: 14px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+div.chapter-summary h2 {
+	margin: 0 0 6px 0;
+	padding: 0;
+	line-height: 24px;
+}
+
+div.chapter-summary ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 23px;
+}
+
+div.chapter-summary li {
+	font-size: 14px;
+	line-height: 150%;
+	list-style: none;
+	padding: 0 20px 0 0;
+}
+
+div.chapter-summary a {
+	text-decoration: none;
+	color: #666;
+}
+
+div.chapter-summary a:hover {
+	text-decoration: underline;
+	color: #900;
+}
+
+div.chapter-summary ul.grouped-sections {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+div.chapter-summary ul.grouped-sections li {
+	font-size: 14px;
+	line-height: 150%;
+	list-style: none;
+	padding: 0 20px 0 0;
+}
+
+div.chapter-summary ul.grouped-sections li a {
+	font-size: 12px;
+	display: inline-block;
+}
+
+.guide-chapters-index {
+	text-indent: 0;
+}
+
+.guide-chapters-index h3 {
+	margin: 0 0 0.2em 0;
+}
+
+.guide-chapters-index ul, .guide-chapters-index li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 140%;
+}
+
+.guide-chapters-index ul {
+	margin-left: 12px;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+.guide-chapters-index a {
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.guide-chapters-index a:hover {
+	color: #900;
+	text-decoration: underline;
+}
+
+.guide-chapters-index ul.grouped-sections li {
+	font-size: 14px;
+	margin: 0;
+}
+
+.guide-chapters-index ul.grouped-sections li a {
+	margin-left: 2em;
+	font-size: 12px;
+}
+
+.guide-header {
+	height: 25px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #666;
+}
+
+.guide-header a {
+	color: #666;
+}
+
+.guide-header a:hover {
+	color: #900;
+}
+
+.guide-section {
+    clear: both;
+    float: none;
+}
+
+.guide-sidebar {
+    float: left;
+    width: 200px;
+    font-size: 14px;
+}
+
+.guide-sidebar h2 {
+    color: #333;
+}
+
+.guide-sidebar h3 {
+    margin: 14px 0 2px 0;
+    padding: 0;
+}
+
+.guide-sidebar h3 a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+}
+
+.guide-sidebar h3 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.guide-sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.guide-sidebar ul li {
+	line-height: 120%;
+	list-style: none;
+	padding: 0 20px 0 0;
+    text-indent: 10px;
+	font-size: 12px;
+	color: #666;
+}
+
+.guide-sidebar ul li a {
+    font-weight: normal;
+	font-size: 12px;
+	display: inline-block;
+    color: #666;
+	text-decoration: none;
+}
+
+.guide-sidebar ul li a:hover {
+    color: #000;
+	text-decoration: underline;
+}
+
+.guide-contents {
+    margin-left: 200px;
+    width: 740px;
+}
+
+.guide-footer {
+	font-size: 14px;
+	margin-top: 20px;
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+}
+
+.guide-footer a {
+    line-height: 24px;
+}
+
+#books-list {
+	margin-bottom: 2em;
+}
+
+#books-list div.book-index {
+	margin-bottom: 3em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #ccc;
+}
+
+#books-list div.last {
+	border: none;
+	margin-bottom: 0;
+}
+
+div.book-links {
+	height: 22px;
+	background-color: #eee;
+	padding: 1em;
+	border: 1px solid #ddd;
+}
+
+div.book-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.book-links li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+div.book-links li a {
+	font-size: 14px;
+	margin-right: 30px;
+	line-height: 22px;
+	padding-left: 30px;
+	height: 22px;
+	display: block;
+}
+

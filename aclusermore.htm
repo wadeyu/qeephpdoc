@@ -1,0 +1,1028 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QeePHP/FleaPHP 开源开发框架 - 开源项目|模型行为插件|AclUserMore1.0- 支持仿DISCUZ加密cookie登陆的acluser</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="base.css" tppabs="http://qeephp.com/qeephp/base.css" />
+<link rel="stylesheet" type="text/css" href="jquery-ui-081120.css" tppabs="http://qeephp.com/qeephp/jquery-ui-081120.css" />
+<script type="text/javascript" src="jquery-1.2.6.min.js" tppabs="http://qeephp.com/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.5.3-081202.min.js" tppabs="http://qeephp.com/qeephp/jquery-ui-1.5.3-081202.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+});
+</script>
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<!-- header -->
+<div id="header">
+  <div class="container clearfix">
+    <div id="header_nav">
+      <ul id="navigation">
+        <li class="first"><a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a></li>
+        <li><a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a></li>
+        <li><a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a></li>
+        <li><a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<!-- /header -->
+
+
+<!-- core -->
+<div id="core" class="clearfix">
+  <div class="container clearfix">
+
+    <!-- 左侧栏 -->
+
+    <div id="subpage_sidebar" class="left">
+
+      
+<!-- user_controlpanel -->
+
+<div id="user_controlpanel" class="box">
+
+  
+  <h4 class="yellow">用户控制面板</h4>
+
+  <div class="box-cnt">
+    <ul>
+      <li>
+        <a class="icn_login" href="logging.php-action=login.htm" tppabs="http://qeephp.com/bbs/logging.php?action=login">登录后发布项目和应用展示</a>
+      </li>
+      <li>
+        <a class="icn_register" href="register.php.htm" tppabs="http://qeephp.com/bbs/register.php">注册为社区成员</a>
+      </li>
+    </ul>
+  </div>
+
+  
+</div>
+
+<!-- /user_controlpanel -->
+
+
+
+
+      <!--
+      <form id="sub_search_form" name="sub_search_form" action="/projects" method="get">
+        <input type="text" class="txt" name="keyword" />
+        <input type="submit" class="btn" name="Submit" value="搜索项目" />
+      </form>
+      -->
+
+      
+      
+<!-- projects_categories -->
+
+<div id="projects_categories" class="box">
+  <h4 class="blue">开源项目分类</h4>
+
+  <div class="box-cnt">
+    <p>
+            <a href="framework-1.htm" tppabs="http://qeephp.com/projects/search/cat/framework">框架</a>
+            <a href="app.htm" tppabs="http://qeephp.com/projects/search/cat/app">综合应用</a>
+            <a href="behavior.htm" tppabs="http://qeephp.com/projects/search/cat/behavior">模型行为插件</a>
+            <a href="helper.htm" tppabs="http://qeephp.com/projects/search/cat/helper">助手</a>
+            <a href="formview.htm" tppabs="http://qeephp.com/projects/search/cat/formview">表单视图脚本</a>
+            <a href="tool.htm" tppabs="http://qeephp.com/projects/search/cat/tool">工具</a>
+            <a href="example.htm" tppabs="http://qeephp.com/projects/search/cat/example">学习实例</a>
+            <a href="security.htm" tppabs="http://qeephp.com/projects/search/cat/security">安全</a>
+            <a href="db.htm" tppabs="http://qeephp.com/projects/search/cat/db">数据库</a>
+            <a href="webcontrol.htm" tppabs="http://qeephp.com/projects/search/cat/webcontrol">用户界面控件</a>
+          </p>
+
+    <p>
+      <a href="projects.htm" tppabs="http://qeephp.com/projects">查看全部类别的开源项目...</a>
+    </p>
+  </div>
+</div>
+
+<!-- /projects_categories -->
+
+
+
+      
+<!-- popular_projects -->
+
+<div id="popular_projects" class="box">
+  <h4><span class="right">[<a href="downloads_count-desc.htm" tppabs="http://qeephp.com/projects/index/order/downloads_count-desc">查看全部</a>]</span>最热门的项目</h4>
+  <ul>
+
+    
+    <li>
+      <a href="qeephp.htm" tppabs="http://qeephp.com/projects/qeephp" target="_blank">QeePHP 2.1.2560</a>
+    </li>
+
+    
+    <li>
+      <a href="apmxe.htm" tppabs="http://qeephp.com/projects/apmxe" target="_blank">APM Express 集成运行环境</a>
+    </li>
+
+    
+    <li>
+      <a href="community.htm" tppabs="http://qeephp.com/projects/community" target="_blank">QeePHP.com 社区平台</a>
+    </li>
+
+    
+    <li>
+      <a href="qeephp_2_1_2683.htm" tppabs="http://qeephp.com/projects/qeephp_2_1_2683" target="_blank">QeePHP V2.1 Build 2683</a>
+    </li>
+
+    
+    <li>
+      <a href="13blog.htm" tppabs="http://qeephp.com/projects/13blog" target="_blank">[视频教程]建立简单mvc blog</a>
+    </li>
+
+    
+    <li>
+      <a href="example_todo.htm" tppabs="http://qeephp.com/projects/example_todo" target="_blank">示例 todo</a>
+    </li>
+
+    
+    <li>
+      <a href="ds_blog.htm" tppabs="http://qeephp.com/projects/ds_blog" target="_blank">QeePHP简单例子Ds_Blog</a>
+    </li>
+
+    
+    <li>
+      <a href="qeephpbuild.htm" tppabs="http://qeephp.com/projects/qeephpbuild" target="_blank">QeePHP 专属生成工具</a>
+    </li>
+
+    
+    <li>
+      <a href="formview_simple.htm" tppabs="http://qeephp.com/projects/formview_simple" target="_blank">简单的表单视图</a>
+    </li>
+
+    
+    <li>
+      <a href="example_hello.htm" tppabs="http://qeephp.com/projects/example_hello" target="_blank">示例 HelloWorld</a>
+    </li>
+
+    
+  </ul>
+</div>
+
+<!-- /popular_projects -->
+
+
+
+      
+<!-- ratings_projects -->
+
+<div id="ratings_projects" class="box">
+  <h4><span class="right">[<a href="rating-desc.htm" tppabs="http://qeephp.com/projects/index/order/rating-desc">查看全部</a>]</span>评价最高的项目</h4>
+  <ul>
+
+    
+    <li>
+      <a href="fleaphp.htm" tppabs="http://qeephp.com/projects/fleaphp" target="_blank">FleaPHP 1.7.1524</a>
+    </li>
+
+    
+    <li>
+      <a href="qeephp.htm" tppabs="http://qeephp.com/projects/qeephp" target="_blank">QeePHP 2.1.2560</a>
+    </li>
+
+    
+    <li>
+      <a href="qeephpbuild.htm" tppabs="http://qeephp.com/projects/qeephpbuild" target="_blank">QeePHP 专属生成工具</a>
+    </li>
+
+    
+    <li>
+      <a href="community.htm" tppabs="http://qeephp.com/projects/community" target="_blank">QeePHP.com 社区平台</a>
+    </li>
+
+    
+    <li>
+      <a href="pagination.htm" tppabs="http://qeephp.com/projects/pagination" target="_blank">Digg 样式的分页导航条</a>
+    </li>
+
+    
+    <li>
+      <a href="ds_blog.htm" tppabs="http://qeephp.com/projects/ds_blog" target="_blank">QeePHP简单例子Ds_Blog</a>
+    </li>
+
+    
+    <li>
+      <a href="acluserauth.htm" tppabs="http://qeephp.com/projects/acluserauth" target="_blank">acluserauth - 支持cookie登陆的acluser</a>
+    </li>
+
+    
+    <li>
+      <a href="formview_simple.htm" tppabs="http://qeephp.com/projects/formview_simple" target="_blank">简单的表单视图</a>
+    </li>
+
+    
+    <li>
+      <a href="apmxe.htm" tppabs="http://qeephp.com/projects/apmxe" target="_blank">APM Express 集成运行环境</a>
+    </li>
+
+    
+    <li>
+      <a href="example_todo.htm" tppabs="http://qeephp.com/projects/example_todo" target="_blank">示例 todo</a>
+    </li>
+
+    
+  </ul>
+</div>
+
+<!-- /ratings_projects -->
+
+
+
+      
+<!-- recents_projects -->
+
+<div id="recents_projects" class="box">
+  <h4><span class="right">[<a href="updated-desc.htm" tppabs="http://qeephp.com/projects/index/order/updated-desc">查看全部</a>]</span>最近更新的项目</h4>
+  <ul>
+
+    
+    <li>
+      <a href="kenxuunittesting.htm" tppabs="http://qeephp.com/projects/kenxuunittesting" target="_blank">简易PHP5单元测试框架kenxu-unit/</a>
+    </li>
+
+    
+    <li>
+      <a href="qeephp_2_1_2683.htm" tppabs="http://qeephp.com/projects/qeephp_2_1_2683" target="_blank">QeePHP V2.1 Build 2683</a>
+    </li>
+
+    
+    <li>
+      <a href="xser-php-framework-0_11.htm" tppabs="http://qeephp.com/projects/xser-php-framework-0_11" target="_blank">xser-php-framework-0.11</a>
+    </li>
+
+    
+    <li>
+      <a href="xser-php-framework.htm" tppabs="http://qeephp.com/projects/xser-php-framework" target="_blank">xser php framework v0.1</a>
+    </li>
+
+    
+    <li>
+      <a href="cnny001.htm" tppabs="http://qeephp.com/projects/cnny001" target="_blank">中国农药第一网</a>
+    </li>
+
+    
+    <li>
+      <a href="aclusermore.htm" tppabs="http://qeephp.com/projects/aclusermore" target="_blank">AclUserMore1.0- 支持仿DISCUZ加密cookie登陆的acluser</a>
+    </li>
+
+    
+    <li>
+      <a href="06dengbangrong.htm" tppabs="http://qeephp.com/projects/06dengbangrong" target="_blank">学生作业</a>
+    </li>
+
+    
+    <li>
+      <a href="fleaphp-log-viewer.htm" tppabs="http://qeephp.com/projects/fleaphp-log-viewer" target="_blank">FleaPHP  开发日志查看器</a>
+    </li>
+
+    
+    <li>
+      <a href="qcache_ea.htm" tppabs="http://qeephp.com/projects/qcache_ea" target="_blank">QCache_EA</a>
+    </li>
+
+    
+    <li>
+      <a href="community.htm" tppabs="http://qeephp.com/projects/community" target="_blank">QeePHP.com 社区平台</a>
+    </li>
+
+    
+  </ul>
+</div>
+
+<!-- /recents_projects -->
+
+
+
+    </div>
+
+    <!-- /左侧栏 -->
+
+    <!-- 右侧栏 -->
+
+    <div id="col3" class="right contents">
+
+      
+<!-- 项目详细信息 -->
+
+<div class="project-show">
+
+  <div class="projects-title">
+    <img src="icn_project.gif" tppabs="http://qeephp.com/qeephp/icn_project.gif" />
+
+    <h1>
+      <a href="aclusermore.htm" tppabs="http://qeephp.com/projects/aclusermore">AclUserMore1.0- 支持仿DISCUZ加密cookie登陆的acluser</a>
+                </h1>
+
+    <p>
+            作者：<a href="adslccn.htm" tppabs="http://qeephp.com/projects/search/member/adslccn">adslccn</a>
+          </p>
+  </div>
+
+  <div class="projects-contents">
+    <ul class="meta clearfix">
+      <li>分类：<a href="behavior.htm" tppabs="http://qeephp.com/projects/search/cat/behavior">模型行为插件</a></li>
+      <li>最后更新：<strong>2009-12-02 11:05</strong></li>
+      <li>下载次数：<strong class="hot">463</strong></li>
+    </ul>
+
+    <ul class="urls">
+      <li class="project_url">项目网址：<a href="aclusermore.htm" tppabs="http://qeephp.com/projects/aclusermore">/projects/aclusermore</a></li>
+
+      <li class="doc_url">在线文档：<a href="thread-10287-1-1.html" tppabs="http://qeephp.com/bbs/thread-10287-1-1.html">http://qeephp.com/bbs/thread-10287-1-1.html</a></li>
+
+    </ul>
+
+    <div class="formatted">
+      
+<h2>1.0 添加了 仿DISCUZ加密方式的支持</h2>
+
+<p># 在用户表中使用什么字段名保存的加密字符串
+acl_discuz_key: salt</p>
+
+<h2>如此字段不为空 则 使用表中加密字符串进行加密
+且固定字符串加密不可用</h2>
+
+<p>与acluserauth类似 # 是否自动打开 session runtime_session_start: true
+(程序默认存在并开启 此为必须) 以下为选择设置
+(如果为空则采用默认)可以为空</p>
+
+<p># 在 cookie 中使用什么名字保存应用程序的 session
+(如果为空则默认为user) session_cookie_name: exblog_sess # 指示 ACL
+组件用什么加密cookie中的数据 (如果为空则不采用 再次加密)
+acl_cookie_salt: aaa #指示 ACL
+组件的cookie作用路径(如果为空则默认为/) acl_cookie_path: / #
+指示 ACL 组件用什么键名在 session
+中保存用户数据(如果为空则默认为user) acl_session_key:
+acl_exblog_userdata用法 在model中载入插件acluserMore
+（不能与acluser同时存在） 用法1： try{</p>
+
+<p>Users::meta()-&gt;IsLogin();</p>
+
+<p>}catch (AclUser_UsernameNotFoundException $ex)</p>
+
+<p>{</p>
+
+<p>echo ‚错误的COOKIES信息 请不要伪造COOKIES‘;</p>
+
+<p>}catch (AclUser_WrongPasswordException $ex)</p>
+
+<p>{</p>
+
+<p>echo ‚错误的登录信息 ,请重新登录‘;</p>
+
+<p>User::meta()-&gt;Out();</p>
+
+<p>} 复制代码用法2： try</p>
+
+<p>{</p>
+
+<p>Users::meta()-&gt;Login($this-&gt;_context-&gt;username,
+$this-&gt;_context-&gt;password, 3600);</p>
+
+<p>}catch (AclUser_UsernameNotFoundException $ex)</p>
+
+<p>{</p>
+
+<p>echo ‚用户名无效‘;</p>
+
+<p>}catch (AclUser_WrongPasswordException $ex)</p>
+
+<p>{</p>
+
+<p>echo ‚密码不正确‘;</p>
+
+<p>} 复制代码acluserMore.php &lt;?php</p>
+
+<p>// version:1.0</p>
+
+<p>// $Id: acluserMore.php extend AclUser by 2423 2009–11–25 :by
+adslccn</p>
+
+<p>/*</p>
+
+<ul>
+	<li>2009–12–2更新 :</li>
+
+	<li>-仿discuz用户加密方法:</li>
+
+	<li>--acl_discuz_key
+	为用户表中的随即加密字符串,如果此设置为空则不使用此方式加密</li>
+
+	<li>-取消登录方法中无用的已登录判断</li>
+</ul>
+
+<p>*</p>
+
+<p>*/</p>
+
+<p>class Model_Behavior_AclUserMore extends Model_Behavior_AclUser</p>
+
+<p>{</p>
+
+<p>/**</p>
+
+<p>* 绑定行为插件 此绑定 重写Model_Behavior_AclUser-&gt;bind()</p>
+
+<p>*/</p>
+
+<p>function bind()</p>
+
+<p>{</p>
+
+<p>$this-&gt;_addStaticMethod(‚validateLogin‘, array($this,
+‚validateLogin‘));</p>
+
+<p>$this-&gt;_addStaticMethod(‚validateUsername‘, array($this,
+‚validateUsername‘));</p>
+
+<p>$this-&gt;_addStaticMethod(‚validatePassword‘, array($this,
+‚validatePassword‘));</p>
+
+<p>$this-&gt;_addStaticMethod(‚changePassword‘, array($this,
+‚changePassword‘));</p>
+
+<p>$this-&gt;_addDynamicMethod(‚checkPassword‘, array($this,
+‚checkPasswordDyn‘));</p>
+
+<p>$this-&gt;_addDynamicMethod(‚changePassword‘, array($this,
+‚changePasswordDyn‘));</p>
+
+<p>$this-&gt;_addDynamicMethod(‚updateLogin‘, array($this,
+‚updateLoginDyn‘));</p>
+
+<p>if ($this-&gt;_settings[‚roles_enabled‘])</p>
+
+<p>{</p>
+
+<p>$this-&gt;_addDynamicMethod(‚aclRoles‘, array($this,
+‚aclRolesDyn‘));</p>
+
+<p>}</p>
+
+<p>$this-&gt;_addDynamicMethod(‚aclData‘, array($this,
+‚aclDataDyn‘));</p>
+
+<p>$this-&gt;_addEventHandler(self::AFTER_VALIDATE_ON_CREATE, array($this,
+‚_after_validate_on_create‘));</p>
+
+<p>$this-&gt;_addEventHandler(self::AFTER_VALIDATE_ON_UPDATE, array($this,
+‚_after_validate_on_update‘));</p>
+
+<p>//新方法注册start</p>
+
+<p>$this-&gt;_addStaticMethod(‚IsLogin‘, array($this, ‚IsLogin‘));</p>
+
+<p>$this-&gt;_addStaticMethod(‚Login‘, array($this,
+‚LoginToWebSite‘));</p>
+
+<p>$this-&gt;_addStaticMethod(‚Out‘, array($this, ‚OutWebSite‘));</p>
+
+<p>//end</p>
+
+<p>}</p>
+
+<p>function IsLogin()</p>
+
+<p>{</p>
+
+<p>$key = Q::ini(‚acl_session_key‘) ? Q::ini(‚acl_session_key‘) :
+‚user‘;</p>
+
+<p>$cookieKey = Q::ini(‚session_cookie_name‘) ?
+Q::ini(‚session_cookie_name‘) : ‚user‘;</p>
+
+<p>if(!empty($_SESSION[$key]))</p>
+
+<p>return 1;</p>
+
+<p>else if(isset($_COOKIE[$cookieKey]))</p>
+
+<p>{</p>
+
+<p>return $this-&gt;LoginToWebSite($_COOKIE[$cookieKey][‚username‘],
+$_COOKIE[$cookieKey][‚password‘],NULL,true);</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>return –1;</p>
+
+<p>}</p>
+
+<p>/*</p>
+
+<p>* 登录到网站 产生SESSION 和 COOKIES 返回操作结果状态</p>
+
+<p>*</p>
+
+<p>* 如果登录成功SESSION自动产生 $key为 environment.yaml.php
+中的acl_session_key</p>
+
+<p>* -如果acl_session_key为空 则 为默认值‚user‘</p>
+
+<p>*
+-产生SESSION为$_SESSION[$key][‚uid‘]和$_SESSION[$key][‚username‘]</p>
+
+<p>*</p>
+
+<p>* 如果$loginTime&gt;0则产生COOKIE 反之不产生 cookie</p>
+
+<p>* -$cookieKey为 environment.yaml.php 中的session_cookie_name</p>
+
+<p>* -如果session_cookie_name为空 则 为默认值‚user‘</p>
+
+<p>* -产出 cookie为
+$_COOKIE[$cookieKey][‚uid‘],$_COOKIE[$cookieKey][‚username‘]</p>
+
+<p>* -和 $_COOKIE[$cookieKey][‚password‘]</p>
+
+<p>* -cookies path 为 environment.yaml.php 中的acl_cookie_path</p>
+
+<p>* -如果acl_cookie_path为空 则 为默认值‚/‘</p>
+
+<p>* 如果 acl_cookie_salt 为空则不使用 MD5再次加密</p>
+
+<p>*</p>
+
+<p>* 用法：</p>
+
+<p>* @code php</p>
+
+<p>*</p>
+
+<p>* //SESSION失效 但COOKIES未失效</p>
+
+<p>*
+$this-&gt;LoginToWebSite($_COOKIE[‚user‘][‚username‘],$_COOKIE[‚user‘][‚password‘],NULL,true);</p>
+
+<p>*</p>
+
+<p>* //登录 产生SESSION和COOKIE $time为cookie有效期</p>
+
+<p>*
+$this-&gt;LoginToWebSite($_COOKIE[‚user‘][‚username‘],$_COOKIE[‚user‘][‚password‘],$time);</p>
+
+<p>*</p>
+
+<p>* //登录 只产生SESSION</p>
+
+<p>*
+$this-&gt;LoginToWebSite($_COOKIE[‚user‘][‚username‘],$_COOKIE[‚user‘][‚password‘]);</p>
+
+<p>* @endcode</p>
+
+<p>*</p>
+
+<p>* 如果用户名不存在，将抛出 AclUser_UsernameNotFoundException
+异常。</p>
+
+<p>* 密码不正确，则抛出 AclUser_WrongPasswordException 异常。</p>
+
+<p>*</p>
+
+<p>* @param string $username 用户名</p>
+
+<p>* @param string $password 密码</p>
+
+<p>* @param int $loginTime cookies 有效期</p>
+
+<p>* @$cookieslogin 是否cookies自动登录产生SESSION</p>
+
+<p>*</p>
+
+<p>*/</p>
+
+<p>function LoginToWebSite($username, $password, $loginTime = 0, $cookieslogin
+= false)</p>
+
+<p>{</p>
+
+<p>$key = Q::ini(‚acl_session_key‘) ? Q::ini(‚acl_session_key‘) :
+‚user‘;</p>
+
+<p>$cookieKey = Q::ini(‚session_cookie_name‘) ?
+Q::ini(‚session_cookie_name‘) : ‚user‘;</p>
+
+<p>if(Q::ini(‚acl_discuz_key‘))</p>
+
+<p>{</p>
+
+<p>$pn = $this-&gt;_settings[‚username_prop‘];</p>
+
+<p>$member = $this-&gt;_meta-&gt;find(array($pn ⇒
+$username))-&gt;setColumns(Q::ini(‚acl_discuz_key‘))-&gt;query();</p>
+
+<p>$salt = $member[Q::ini(‚acl_discuz_key‘)];</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>$salt = Q::ini(‚acl_cookie_salt‘) ? Q::ini(‚acl_cookie_salt‘)
+: '';</p>
+
+<p>/*</p>
+
+<p>if(isset($_SESSION[$key]))</p>
+
+<p>;<em>return –3;</em>已经登录了</p>
+
+<p>*/</p>
+
+<p>if($cookieslogin)</p>
+
+<p>$objectUser = $this-&gt;validateCookieLogin($username, $password);</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>if(!empty($salt))</p>
+
+<p>$password = md5($password).$salt;</p>
+
+<p>$objectUser = $this-&gt;validateLogin($username, $password);</p>
+
+<p>}</p>
+
+<p>//登录成功处理</p>
+
+<p>$_SESSION[$key][‚uid‘] = $objectUser-&gt;uid;</p>
+
+<p>$_SESSION[$key][‚username‘] = $username;</p>
+
+<p>if(!empty($loginTime))</p>
+
+<p>{</p>
+
+<p>$path = Q::ini(‚acl_cookie_path‘) ? Q::ini(‚acl_cookie_path‘)
+: ‚/‘;</p>
+
+<p>setcookie($cookieKey.‚[uid]‘, $objectUser-&gt;uid, time()+$loginTime,
+$path);</p>
+
+<p>setcookie($cookieKey.‚[username]‘, $objectUser-&gt;username,
+time()+$loginTime, $path);</p>
+
+<p>setcookie($cookieKey.‚[password]‘, $objectUser-&gt;password,
+time()+$loginTime, $path);</p>
+
+<p>}</p>
+
+<p>return $objectUser;//登录成功</p>
+
+<p>}</p>
+
+<p>/*</p>
+
+<p>* 与validateLogin类似</p>
+
+<p>* 但不再将获得的$password进行加密</p>
+
+<p>* 此方法并非原创 来源:: QEEphp.com :aligo 发表于 2009–01–15
+15:47</p>
+
+<p>*/</p>
+
+<p>function validateCookieLogin($username, $password, $update_login = true)</p>
+
+<p>{</p>
+
+<p>$pn = $this-&gt;_settings[‚username_prop‘];</p>
+
+<p>$member = $this-&gt;_meta-&gt;find(array($pn ⇒ $username))-&gt;query();</p>
+
+<p>if (!$member-&gt;id())</p>
+
+<p>{</p>
+
+<p>throw new AclUser_UsernameNotFoundException($username);</p>
+
+<p>}</p>
+
+<p>if ($member[$this-&gt;_settings[‚password_prop‘]] != $password)</p>
+
+<p>{</p>
+
+<p>throw new AclUser_WrongPasswordException($username);</p>
+
+<p>}</p>
+
+<p>if ($this-&gt;_settings[‚update_login_auto‘])</p>
+
+<p>{</p>
+
+<p>$this-&gt;updateLoginDyn($member);</p>
+
+<p>}</p>
+
+<p>return $member;</p>
+
+<p>}</p>
+
+<p>/*</p>
+
+<p>*退出登录状态</p>
+
+<p>*删除 SESSION 和COOKIE</p>
+
+<p>*</p>
+
+<p>*/</p>
+
+<p>function OutWebSite()</p>
+
+<p>{</p>
+
+<p>$key = Q::ini(‚acl_session_key‘) ? Q::ini(‚acl_session_key‘) :
+‚user‘;</p>
+
+<p>$cookieKey = Q::ini(‚session_cookie_name‘) ?
+Q::ini(‚session_cookie_name‘) : ‚user‘;</p>
+
+<p>//注销用户</p>
+
+<p>unset($_SESSION[$key]);</p>
+
+<p>//注销用户cookies</p>
+
+<p>setcookie($cookieKey.‚[uid]‘,0, time()-1,
+Q::ini(‚acl_cookie_path‘));</p>
+
+<p>setcookie($cookieKey.‚[username]‘ ,0, time()-1,
+Q::ini(‚acl_cookie_path‘));</p>
+
+<p>setcookie($cookieKey.‚[password]‘ ,0, time()-1,
+Q::ini(‚acl_cookie_path‘));</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<!-- by Texy2! -->    </div>
+
+    <div id="google-adsense-block720" style="margin: 10px 0 10px 0; width: 690px; height: 90px; display: block; overflow: hidden;"></div>
+
+    <hr />
+  </div>
+
+
+<!-- 列出已有的文件 -->
+
+  <a name="list_files"></a>
+  
+  <div class="projects-files">
+
+    <h2>已上传的文件</h2>
+
+    <div id="files-tabs">
+
+      <ul>
+              <li><a href="#tab-acluser">acluser</a></li>
+              <li><a href="#tab-E799BBE5BD95">登录</a></li>
+              <li><a href="#tab-E8A18CE4B8BAE68F92E4BBB6">行为插件</a></li>
+              <li><a href="#tab-E794A8E688B7">用户</a></li>
+              <li><a href="#tab-discuz">discuz</a></li>
+              <li><a href="#tab-E58AA0E5AF86">加密</a></li>
+              <li><a href="#tab-cookieE799BBE5BD95">cookie登录</a></li>
+            </ul>
+
+      
+      <div id="tab-acluser">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+      
+      <div id="tab-E799BBE5BD95">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+      
+      <div id="tab-E8A18CE4B8BAE68F92E4BBB6">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+      
+      <div id="tab-E794A8E688B7">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+      
+      <div id="tab-discuz">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+      
+      <div id="tab-E58AA0E5AF86">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+      
+      <div id="tab-cookieE799BBE5BD95">
+                <p>
+          说&nbsp;明：
+            <span class="summary">acluserMore1.0</span>
+                      &nbsp;
+                        <span class="tag">acluser</span>
+                        <span class="tag">登录</span>
+                        <span class="tag">行为插件</span>
+                        <span class="tag">用户</span>
+                        <span class="tag">discuz</span>
+                        <span class="tag">加密</span>
+                        <span class="tag">cookie登录</span>
+                                <br />
+
+          文&nbsp;件：
+            <a class="filename" href="70" tppabs="http://qeephp.com/projects/aclusermore/download/70">acluserMore.rar            (2.10 KB,
+            上传日期：2009-12-02 11:04)</a>
+            <br />
+          统&nbsp;计：
+            <span class="stats">
+              544 天内下载了 452 次
+            </span>
+        </p>
+              </div>
+
+          </div>
+
+  </div>
+
+<script language="javascript">
+$("#files-tabs > ul").tabs();
+</script>
+
+
+<!-- /列出已有的文件 -->
+
+</div>
+
+<!-- /项目详细信息 -->
+
+
+    </div>
+
+    <!-- /右侧栏 -->
+
+  </div>
+</div>
+<!-- /core -->
+
+<!-- footer -->
+<div id="footer">
+  <div id="breadcrumbs">
+    <p>
+      <a href="index.htm" tppabs="http://qeephp.com/">返回首页</a>
+      &nbsp;&nbsp;
+      <a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a>
+      &nbsp;&nbsp;
+      <a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a>
+      &nbsp;&nbsp;
+      <a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a>
+      &nbsp;&nbsp;
+      <a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a>
+      &nbsp;&nbsp;
+      <a href="index-1.htm" tppabs="http://qeephp.com/bbs/">论坛</a>
+    </p>
+  </div>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /page-wrapper -->
+
+</body>

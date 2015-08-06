@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QeePHP/FleaPHP 开源开发框架 - 起源科技开源社区|中国领先的 PHP 开源解决方案提供商</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="base.css" tppabs="http://qeephp.com/qeephp/base.css" />
+<link rel="stylesheet" type="text/css" href="jquery-ui-081120.css" tppabs="http://qeephp.com/qeephp/jquery-ui-081120.css" />
+<script type="text/javascript" src="jquery-1.2.6.min.js" tppabs="http://qeephp.com/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.5.3-081202.min.js" tppabs="http://qeephp.com/qeephp/jquery-ui-1.5.3-081202.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+});
+</script>
+</head>
+<body>
+
+<div id="page-wrapper">
+
+<!-- header -->
+<div id="header">
+  <div class="container clearfix">
+    <div id="header_nav">
+      <ul id="navigation">
+        <li class="first"><a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a></li>
+        <li><a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a></li>
+        <li><a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a></li>
+        <li><a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<!-- /header -->
+
+
+<!-- core -->
+<div id="core" class="clearfix">
+  <div class="container clearfix">
+
+    
+
+    <!-- 整页 -->
+
+    <div id="fullpage" class="contents">
+
+      
+<div class="guide-section">
+
+  <div class="guide-header">
+    <span class="nav">
+      <a href="index-4.htm" tppabs="http://qeephp.com/docs/">文档索引</a>
+      &raquo;
+      <a href="index-6.htm" tppabs="http://qeephp.com/docs/qeephp-manual/">QeePHP 应用开发权威指南</a>
+      &raquo;
+      <a href="node-model.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model">模型与 ORM</a>
+      &raquo;
+      管理模型的属性    </span>
+  </div>
+
+  <div class="guide-section">
+    <div class="guide-sidebar">
+      
+<h2>目录</h2>
+
+
+<h3><a href="node-intro.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-intro">QeePHP 介绍</a></h3>
+
+
+<ul class="grouped-sections">
+
+  
+  <li>
+    基本:
+  </li>
+
+    <li>
+    <a href="node-intro-why.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-intro-why" subject="为什么选择 QeePHP">为什么选择 QeePHP</a>
+  </li>
+    <li>
+    <a href="node-intro-features.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-intro-features" subject="主要特征">主要特征</a>
+  </li>
+    <li>
+    <a href="node-intro-history.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-intro-history" subject="QeePHP 的历史">QeePHP 的历史</a>
+  </li>
+    <li>
+    <a href="node-intro-thanks.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-intro-thanks" subject="致谢">致谢</a>
+  </li>
+  
+  
+</ul>
+
+
+
+<h3><a href="node-mvc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc">MVC 模式</a></h3>
+
+
+<ul class="grouped-sections">
+
+  
+  <li>
+    基本:
+  </li>
+
+    <li>
+    <a href="node-mvc-flowchart.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-flowchart" subject="MVC 工作流程">MVC 工作流程</a>
+  </li>
+    <li>
+    <a href="node-mvc-entry.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-entry" subject="入口脚本">入口脚本</a>
+  </li>
+  
+  
+  <li>
+    配置:
+  </li>
+
+    <li>
+    <a href="node-mvc-boot.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-boot" subject="启动文件">启动文件</a>
+  </li>
+    <li>
+    <a href="node-mvc-appini.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-appini" subject="应用程序设置">应用程序设置</a>
+  </li>
+  
+  
+  <li>
+    执行:
+  </li>
+
+    <li>
+    <a href="node-mvc-appobj.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-appobj" subject="应用程序对象">应用程序对象</a>
+  </li>
+    <li>
+    <a href="node-mvc-controllers.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-controllers" subject="控制器">控制器</a>
+  </li>
+    <li>
+    <a href="node-mvc-context.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-context" subject="上下文对象">上下文对象</a>
+  </li>
+    <li>
+    <a href="node-mvc-helpers.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-helpers" subject="助手">助手</a>
+  </li>
+  
+  
+  <li>
+    视图:
+  </li>
+
+    <li>
+    <a href="node-mvc-view-data.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-view-data" subject="传递数据到视图">传递数据到视图</a>
+  </li>
+    <li>
+    <a href="node-mvc-view-inherit.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-view-inherit" subject="视图的继承">视图的继承</a>
+  </li>
+    <li>
+    <a href="node-mvc-view-elements.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-view-elements" subject="视图片段">视图片段</a>
+  </li>
+    <li>
+    <a href="node-mvc-webcontrols.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-webcontrols" subject="用户界面控件">用户界面控件</a>
+  </li>
+  
+  
+  <li>
+    其他:
+  </li>
+
+    <li>
+    <a href="node-mvc-router.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-router" subject="URL 路由">URL 路由</a>
+  </li>
+    <li>
+    <a href="node-mvc-access-control.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-mvc-access-control" subject="访问控制">访问控制</a>
+  </li>
+  
+  
+</ul>
+
+
+
+<h3><a href="node-model.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model">模型与 ORM</a></h3>
+
+
+<ul class="grouped-sections">
+
+  
+  <li>
+    基本:
+  </li>
+
+    <li>
+    <a href="node-model-basic.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-basic" subject="基础">基础</a>
+  </li>
+    <li>
+    <a href="node-model-define.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-define" subject="定义模型">定义模型</a>
+  </li>
+    <li>
+    <a href="node-model-dbtable.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-dbtable" subject="存储模型的数据表">存储模型的数据表</a>
+  </li>
+    <li>
+    <a href="node-model-props.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-props" subject="管理模型的属性">管理模型的属性</a>
+  </li>
+  
+  
+  <li>
+    安全:
+  </li>
+
+    <li>
+    <a href="node-model-validations.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-validations" subject="自动验证">自动验证</a>
+  </li>
+    <li>
+    <a href="node-model-protection.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-protection" subject="保护模型">保护模型</a>
+  </li>
+  
+  
+  <li>
+    CRUD 操作:
+  </li>
+
+    <li>
+    <a href="node-model-query.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-query" subject="查询 Read">查询 Read</a>
+  </li>
+    <li>
+    <a href="node-model-create.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-create" subject="创建 Create">创建 Create</a>
+  </li>
+    <li>
+    <a href="node-model-update.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-update" subject="更新 Update">更新 Update</a>
+  </li>
+    <li>
+    <a href="node-model-destroy.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-destroy" subject="删除 Delete">删除 Delete</a>
+  </li>
+  
+  
+  <li>
+    关联:
+  </li>
+
+    <li>
+    <a href="node-model-whats-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-whats-assoc" subject="对相关联是什么">对相关联是什么</a>
+  </li>
+    <li>
+    <a href="node-model-define-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-define-assoc" subject="定义关联">定义关联</a>
+  </li>
+    <li>
+    <a href="node-model-hasone-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-hasone-assoc" subject="HAS ONE 关联">HAS ONE 关联</a>
+  </li>
+    <li>
+    <a href="node-model-hasmany-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-hasmany-assoc" subject="HAS MANY 关联">HAS MANY 关联</a>
+  </li>
+    <li>
+    <a href="node-model-belongsto-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-belongsto-assoc" subject="BELONGS TO 关联">BELONGS TO 关联</a>
+  </li>
+    <li>
+    <a href="node-model-manytomany-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-manytomany-assoc" subject="MANY TO MANY 关联">MANY TO MANY 关联</a>
+  </li>
+    <li>
+    <a href="node-model-query-assoc.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-query-assoc" subject="关联查询">关联查询</a>
+  </li>
+  
+  
+  <li>
+    高级:
+  </li>
+
+    <li>
+    <a href="node-model-behaviors.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-behaviors" subject="使用行为插件">使用行为插件</a>
+  </li>
+    <li>
+    <a href="node-model-meta.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-meta" subject="元对象">元对象</a>
+  </li>
+  
+  
+  <li>
+    扩展:
+  </li>
+
+    <li>
+    <a href="node-model-events.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-events" subject="事件回调">事件回调</a>
+  </li>
+    <li>
+    <a href="node-model-creating-behavior.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-creating-behavior" subject="创建行为插件">创建行为插件</a>
+  </li>
+  
+  
+</ul>
+
+
+
+<h3><a href="node-form.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form">表单</a></h3>
+
+
+<ul class="grouped-sections">
+
+  
+  <li>
+    基本:
+  </li>
+
+    <li>
+    <a href="node-form-overview.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-overview" subject="概述">概述</a>
+  </li>
+    <li>
+    <a href="node-form-creating.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-creating" subject="创建表单">创建表单</a>
+  </li>
+    <li>
+    <a href="node-form-elements.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-elements" subject="操作表单元素">操作表单元素</a>
+  </li>
+  
+  
+  <li>
+    使用:
+  </li>
+
+    <li>
+    <a href="node-form-render.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-render" subject="显示表单">显示表单</a>
+  </li>
+    <li>
+    <a href="node-form-data.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-data" subject="处理数据">处理数据</a>
+  </li>
+    <li>
+    <a href="node-form-states.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-states" subject="不同状态的表单">不同状态的表单</a>
+  </li>
+  
+  
+  <li>
+    高级:
+  </li>
+
+    <li>
+    <a href="node-form-dynamic.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-dynamic" subject="动态元素">动态元素</a>
+  </li>
+    <li>
+    <a href="node-form-grouping.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-form-grouping" subject="群组">群组</a>
+  </li>
+  
+  
+</ul>
+
+
+
+<h3><a href="node-db.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db">数据库</a></h3>
+
+
+<ul class="grouped-sections">
+
+  
+  <li>
+    基本:
+  </li>
+
+    <li>
+    <a href="node-db-connections.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-connections" subject="管理数据库连接">管理数据库连接</a>
+  </li>
+    <li>
+    <a href="node-db-schema.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-schema" subject="使用 schema">使用 schema</a>
+  </li>
+  
+  
+  <li>
+    查询:
+  </li>
+
+    <li>
+    <a href="node-db-query.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-query" subject="查询方法参考">查询方法参考</a>
+  </li>
+    <li>
+    <a href="node-db-advanced-query.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-advanced-query" subject="高级查询">高级查询</a>
+  </li>
+  
+  
+  <li>
+    操作:
+  </li>
+
+    <li>
+    <a href="node-db-insert.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-insert" subject="插入">插入</a>
+  </li>
+    <li>
+    <a href="node-db-update.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-update" subject="更新">更新</a>
+  </li>
+    <li>
+    <a href="node-db-delete.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-delete" subject="删除">删除</a>
+  </li>
+    <li>
+    <a href="node-db-expression.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-expression" subject="数据库表达式">数据库表达式</a>
+  </li>
+    <li>
+    <a href="node-db-transactions.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-transactions" subject="数据库事务">数据库事务</a>
+  </li>
+    <li>
+    <a href="node-db-statement.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-statement" subject="命令和存储过程">命令和存储过程</a>
+  </li>
+  
+  
+  <li>
+    高级:
+  </li>
+
+    <li>
+    <a href="node-db-multi-servers.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-multi-servers" subject="多数据库连接">多数据库连接</a>
+  </li>
+    <li>
+    <a href="node-db-separated-read-write.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-separated-read-write" subject="读写分离">读写分离</a>
+  </li>
+    <li>
+    <a href="node-db-separated-databases.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-separated-databases" subject="分表分库">分表分库</a>
+  </li>
+    <li>
+    <a href="node-db-using-view.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-db-using-view" subject="使用数据库视图">使用数据库视图</a>
+  </li>
+  
+  
+</ul>
+
+
+
+    </div>
+
+    <div class="guide-contents formatted">
+      
+<h1>管理模型的属性</h1>
+
+<p>在 QeePHP 的模型中，属性本身具有多种特性：</p>
+
+<ul>
+	<li>是否是只读属性</li>
+
+	<li>是否是虚拟属性</li>
+
+	<li>是否有 getter 或 setter 方法</li>
+
+	<li>属性的默认值</li>
+
+	<li>属性的类型</li>
+</ul>
+
+<h2>只读属性</h2>
+
+<p>有些情况下，模型一旦创建，其属性就不再允许修改，例如“用户”模型的用户名。</p>
+
+<p>对于这种业务需求，虽然可以通过在控制器中判断请求数据来检查，但是如果某个地方疏漏了检查，就会造成漏洞。所以最可靠的办法还是在模型中直接将这些属性指定为只读。这样一来，可以避免因为疏忽或无意中的错误造成不应该改动的数据被修改了。</p>
+
+<p>要将某个属性指定为只读，只需要在 props 中指定该属性的
+readonly 设置即可：</p>
+
+<pre class="php code"><span class="st_h">'props'</span> <span
+class="sy0">=&gt;</span> <span class="kw3">array</span><span
+class="br0">&#40;</span>
+    <span class="st_h">'username'</span> <span
+class="sy0">=&gt;</span> <span class="kw3">array</span><span
+class="br0">&#40;</span><span class="st_h">'readonly'</span> <span
+class="sy0">=&gt;</span> <span class="kw2">true</span><span
+class="br0">&#41;</span><span class="sy0">,</span>
+    <span
+class="sy0">....</span>
+<span class="br0">&#41;</span></pre>
+
+<p>指定属性的 readonly
+设置后，一旦在应用程序中尝试修改属性值，QeePHP
+就会抛出一个 QDB_ActiveRecord_ChangingReadonlyPropException 异常。</p>
+
+<pre class="php code"><span
+class="co1">// 下面一行代码将导致 QDB_ActiveRecord_ChangingReadonlyPropException 异常</span>
+<span
+class="re0">$user</span><span class="sy0">-&gt;</span><span
+class="me1">username</span> <span class="sy0">=</span> <span
+class="st_h">'testname'</span><span class="sy0">;</span></pre>
+
+<h2>虚拟属性与 getter、setter</h2>
+
+<p>所谓虚拟属性，就是指该属性并不对应到数据表中的一个字段。例如
+User 模型有一个虚拟属性 full_name，但该属性并没有存储在
+users 数据表中，而是通过 last_name 和 first_name
+属性来构造的。</p>
+
+<p>要实现这样的功能，我们需要添加 full_name 属性到 User
+模型中，并且为该属性指定 getter 方法。</p>
+
+<blockquote>
+	<p>在软件开发中，“getter
+	方法”这个术语是指获取某个值的方法，而对应的“setter
+	方法”就是修改某个值的方法。</p>
+</blockquote>
+
+<pre class="php code"><span class="st_h">'props'</span> <span
+class="sy0">=&gt;</span> <span class="kw3">array</span><span
+class="br0">&#40;</span>
+    <span class="sy0">....</span>
+    <span
+class="st_h">'full_name'</span> <span class="sy0">=&gt;</span> <span
+class="kw3">array</span><span class="br0">&#40;</span><span
+class="st_h">'getter'</span> <span class="sy0">=&gt;</span> <span
+class="st_h">'getFullName'</span><span class="br0">&#41;</span><span
+class="sy0">,</span>
+    <span class="sy0">....</span>
+<span
+class="br0">&#41;</span></pre>
+
+<p>以及 getFullName() 方法：</p>
+
+<pre class="php code"><span class="kw2">function</span> getFullName<span
+class="br0">&#40;</span><span class="br0">&#41;</span>
+<span
+class="br0">&#123;</span>
+    <span class="kw1">return</span> <span
+class="re0">$this</span><span class="sy0">-&gt;</span><span
+class="me1">last_name</span> <span class="sy0">.</span> <span
+class="st_h">', '</span> <span class="sy0">.</span> <span
+class="re0">$this</span><span class="sy0">-&gt;</span><span
+class="me1">first_name</span><span class="sy0">;</span>
+<span
+class="br0">&#125;</span></pre>
+
+<p>设置完成后，下面的代码即可正确执行：</p>
+
+<pre class="php code"><span
+class="co1">// 假设 $user 对象的 first_name 是 Charles，last_name 是 Dickens</span>
+<span
+class="co1">// 输出结果为 Dickens, Charles</span>
+<span
+class="kw3">echo</span> <span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">full_name</span><span
+class="sy0">;</span></pre>
+
+<p> </p>
+
+<p>接下来我们再为 full_name 属性添加一个 setter 方法：</p>
+
+<pre class="php code"><span class="st_h">'props'</span> <span
+class="sy0">=&gt;</span> <span class="kw3">array</span><span
+class="br0">&#40;</span>
+    <span class="sy0">....</span>
+    <span
+class="st_h">'full_name'</span> <span class="sy0">=&gt;</span> <span
+class="kw3">array</span><span class="br0">&#40;</span><span
+class="st_h">'getter'</span> <span class="sy0">=&gt;</span> <span
+class="st_h">'getFullName'</span><span class="sy0">,</span> <span
+class="st_h">'setter'</span> <span class="sy0">=&gt;</span> <span
+class="st_h">'setFullName'</span><span class="br0">&#41;</span><span
+class="sy0">,</span>
+    <span class="sy0">....</span>
+<span
+class="br0">&#41;</span>
+&nbsp;
+<span
+class="kw2">function</span> setFullName<span class="br0">&#40;</span><span
+class="re0">$full_name</span><span class="br0">&#41;</span>
+<span
+class="br0">&#123;</span>
+    <span class="re0">$arr</span> <span
+class="sy0">=</span> <span class="kw3">explode</span><span
+class="br0">&#40;</span><span class="st_h">','</span><span
+class="sy0">,</span> <span class="re0">$full_name</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+    <span
+class="re0">$this</span><span class="sy0">-&gt;</span><span
+class="me1">last_name</span>  <span class="sy0">=</span> <span
+class="kw3">trim</span><span class="br0">&#40;</span><span
+class="re0">$arr</span><span class="br0">&#91;</span><span
+class="nu0">0</span><span class="br0">&#93;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+    <span
+class="re0">$this</span><span class="sy0">-&gt;</span><span
+class="me1">first_name</span> <span class="sy0">=</span> <span
+class="kw3">trim</span><span class="br0">&#40;</span><span
+class="re0">$arr</span><span class="br0">&#91;</span><span
+class="nu0">1</span><span class="br0">&#93;</span><span
+class="br0">&#41;</span><span class="sy0">;</span>
+<span
+class="br0">&#125;</span></pre>
+
+<p>有了 full_name 的 setter 方法，我们就可以很方便的同时修改
+first_name 和 last_name 了：</p>
+
+<pre class="php code"><span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">full_name</span> <span
+class="sy0">=</span> <span class="st_h">'Copperfield, David'</span><span
+class="sy0">;</span>
+<span class="co1">// 输出 David</span>
+<span
+class="kw3">echo</span> <span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">first_name</span><span
+class="sy0">;</span>
+<span class="co1">// 输出 Copperfield</span>
+<span
+class="kw3">echo</span> <span class="re0">$user</span><span
+class="sy0">-&gt;</span><span class="me1">last_name</span><span
+class="sy0">;</span></pre>
+
+<p>一个属性的 getter 和 setter
+方法不需要同时提供，许多需求中只有 getter，没有 setter
+方法。</p>
+
+<h2>属性的默认值</h2>
+
+<p>很多时候我们希望模型对象在构造时能够具有特定的默认值。要达到这个效果可以从两方面入手：</p>
+
+<ul>
+	<li>在 __define() 方法中为属性指定 default 选项；</li>
+
+	<li>在数据表中为该属性的存储字段设置默认值。</li>
+</ul>
+
+<p>通过 __define() 来指定属性默认值：</p>
+
+<pre class="php code"><span class="st_h">'props'</span> <span
+class="sy0">=&gt;</span> <span class="kw3">array</span><span
+class="br0">&#40;</span>
+    <span class="sy0">....</span>
+    <span
+class="st_h">'prop_name'</span> <span class="sy0">=&gt;</span> <span
+class="kw3">array</span><span class="br0">&#40;</span><span
+class="st_h">'default'</span> <span class="sy0">=&gt;</span> <span
+class="st_h">'value'</span><span class="br0">&#41;</span><span
+class="sy0">,</span>
+    <span class="sy0">....</span>
+<span
+class="br0">&#41;</span></pre>
+
+<p>当构造一个新对象时，对象的属性值将按照设置的值填充。</p>
+
+<p>但是为属性指定默认值，不等同于对象写入数据库时该属性值不会变化。如果要确保写入数据库的属性值是特定数据，我们可以通过
+create_autofill 设置来实现。create_autofill
+的有关内容在本章节的“自动填充属性值”小节阐述。</p>
+
+<h2>属性的类型</h2>
+
+<p>与通常的 PHP
+开发不同，领域模型的某些属性值是具有类型要求的。例如“商品”的价格只能是一个浮点数，而不能是一个字符串。</p>
+
+<p>虽然可以通过自动验证规则来检查出类型不匹配问题，但是如果模型能够对属性值进行强制类型转换，毫无疑问可以获得一些便利，并且让后续的自动验证变得更简单。</p>
+
+<p>目前，模型的属性支持下列几种类型：</p>
+
+<ul>
+	<li>整数</li>
+
+	<li>浮点数</li>
+
+	<li>布尔值</li>
+</ul>
+
+<p>当视图为上述类型的属性赋值时，QeePHP
+将会对属性值做强制类型转换。例如：</p>
+
+<pre class="php code"><span class="re0">$goods</span><span
+class="sy0">-&gt;</span><span class="me1">price</span> <span
+class="sy0">=</span> <span class="st_h">'ABC'</span><span
+class="sy0">;</span>
+<span
+class="co1">// 由于 price 属性是 float 类型，</span>
+<span
+class="co1">// 并且 'ABC' 强制转换为 float 后的结果是 0。</span>
+<span
+class="co1">// 因此输出 $goods-&gt;price 的结果也是 0。</span>
+<span
+class="kw3">echo</span> <span class="re0">$goods</span><span
+class="sy0">-&gt;</span><span class="me1">price</span><span
+class="sy0">;</span></pre>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p>$Id: model-props.texy 2295 2009-03-10 07:48:18Z dualface $</p>
+    </div>
+
+    <div class="nofloat"></div>
+  </div>
+
+  <div class="guide-footer">
+
+    <table border="0" width="100%">
+      <tr>
+        <td align="left" width="200">
+                    &laquo;
+          <a href="node-model-dbtable.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-dbtable">存储模型的数据表</a>
+          
+        </td>
+
+        <td align="center">
+          本章：<a href="node-model.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model">模型与 ORM</a>
+          <br />
+          <a href="index-6.htm" tppabs="http://qeephp.com/docs/qeephp-manual/">返回索引页</a>
+        </td>
+
+        <td align="right" width="200">
+                    <a href="node-model-validations.htm" tppabs="http://qeephp.com/docs/qeephp-manual/node-model-validations">自动验证</a>
+          &raquo;
+                  </td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
+
+    </div>
+
+    <!-- 整页 -->
+
+
+
+<div id="google-adsense-block720" style="margin: 10px auto 20px auto; width: 730px; height: 90px;"></div>
+
+
+  </div>
+</div>
+<!-- /core -->
+
+<!-- footer -->
+<div id="footer">
+  <div id="breadcrumbs">
+    <p>
+      <a href="index.htm" tppabs="http://qeephp.com/">返回首页</a>
+      &nbsp;&nbsp;
+      <a href="projects.htm" tppabs="http://qeephp.com/projects">开源项目与插件</a>
+      &nbsp;&nbsp;
+      <a href="cases.htm" tppabs="http://qeephp.com/cases">应用展示</a>
+      &nbsp;&nbsp;
+      <a href="framework.htm" tppabs="http://qeephp.com/framework">框架</a>
+      &nbsp;&nbsp;
+      <a href="docs.htm" tppabs="http://qeephp.com/docs">文档</a>
+      &nbsp;&nbsp;
+      <a href="index-1.htm" tppabs="http://qeephp.com/bbs/">论坛</a>
+    </p>
+  </div>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /page-wrapper -->
+
+</body>
