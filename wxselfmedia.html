@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>微信公众号推荐</title>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	</head>
+	<style type="text/css">
+	body{text-align:center;width:95%;margin:auto;}
+	.mod{text-align:left;margin-top:1.6em;}
+	label{display:inline;margin-right:2em;float:left;font-size:1.0em;}
+	p{height:1.2em;font-size:1.1em;}
+	.mod_basic label{width:28%;}
+	h3{margin-bottom:0.8em;}
+	.mod h3{border-bottom:1px solid lightgrey;}
+	li{line-height:1.0em;}
+	</style>
+	<script type="text/javascript">
+		//http://ejohn.org/blog/javascript-micro-templating/
+		// Simple JavaScript Templating
+// John Resig - http://ejohn.org/ - MIT Licensed
+(function(){
+  var cache = {};
+ 
+  this.tmpl = function tmpl(str, data){
+    // Figure out if we're getting a template, or if we need to
+    // load the template - and be sure to cache the result.
+    var fn = !/\W/.test(str) ?
+      cache[str] = cache[str] ||
+        tmpl(document.getElementById(str).innerHTML) :
+     
+      // Generate a reusable function that will serve as a template
+      // generator (and which will be cached).
+      new Function("obj",
+        "var p=[],print=function(){p.push.apply(p,arguments);};" +
+       
+        // Introduce the data as local variables using with(){}
+        "with(obj){p.push('" +
+       
+        // Convert the template into pure JavaScript
+        str
+          .replace(/[\r\t\n]/g, " ")
+          .split("<%").join("\t")
+          .replace(/((^|%>)[^\t]*)'/g, "$1\r")
+          .replace(/\t=(.*?)%>/g, "',$1,'")
+          .split("\t").join("');")
+          .split("%>").join("p.push('")
+          .split("\r").join("\\'")
+      + "');}return p.join('');");
+   
+    // Provide some basic currying to the user
+    return data ? fn( data ) : fn;
+  };
+})();
+
+	</script>
+	<body>
+		<div id="results">
+		</div>
+		<script type="text/html" id="item_tmpl">
+			<div style="margin-top:1em;"><h3>&nbsp;</h3></div>
+			<% for(var i = 0; i < data.length; i++){%>
+			<div class="mod">
+				<h3><%=data[i].t%></h3>
+				<p>
+					<%=data[i].d%>
+				</p>
+				<% if(data[i].img != ''){%>
+				<p style="height:25em;">
+					<img style="width:25em;height:25em;" alt="<%=data[i].alt%>" src="<%=data[i].img%>">
+				</p>
+				<% } %>
+			</div>
+			<% } %>
+		</script>
+		<script type="text/javascript">
+			var aData = [
+				{
+					t:"极客公园(微信号:geekpark)",
+					d:"国内外互联网信息报道，优秀产品发现，高质量的评论，科技界极客交流活动等",
+					alt:"Geekpark",
+					img:"http://7mnpep.com2.z0.glb.qiniucdn.com/assets/qrcodes/geekpark-fde5893255259776f5298a3ce80cffd4.jpg"
+				},
+				{
+					t:"TOMsInsight(微信号:TOMsInsight)",
+					d:"专注中国互联网数据分析独家原创报告，每篇专注某个主题，报告价值非常高，阅读之后获益非浅！",
+					alt:"TOMsInsight",
+					img:"./tomsinsight_qcode.png"
+				},
+				{
+					t:"caoz的梦呓(微信号:caozsay)",
+					d:"中国互联网老兵，曾混迹于百度，中国站长圈传奇人物，对互联网产品运营研发有独到见解，喜欢分享自己的思考心得，所著文章虽然啰嗦，价值颇高！",
+					alt:"caoz的梦呓",
+					img:"./caozheng_qcode.png"
+				},
+				{
+					t:"肉饼铺子(微信号:RobbinThoughts)",
+					d:"JavaEye社区创始人，对事情有独到见解，很有想法",
+					alt:"RobbinThoughts",
+					img:"./robin_qcode.png"
+				},
+				{
+					t:"技术创业空间(微信号:itstarter)",
+					d:"为技术人员创业服务的自媒体，互联网创业相关的干货，以后如果有创业的想法可以看看",
+					alt:"技术创业空间",
+					img:"./tec_qcode.png"
+				},
+				{
+					t:"小道消息(微信号:WebNotes)",
+					d:"冯大辉，曾混迹于淘宝，现丁香园技术合伙人，爱思考，写出的文章很有参考价值！",
+					alt:"小道消息",
+					img:""
+				}
+			];
+			var con = document.getElementById("results");
+				con.innerHTML = tmpl("item_tmpl",{data:aData});
+		</script>
+	</body>
+</html>
